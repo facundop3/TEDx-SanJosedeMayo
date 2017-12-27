@@ -1,0 +1,121 @@
+*{
+  border: 1px solid red;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+a{
+  color: #000;
+}
+a:hover{
+  color: red;
+}
+footer h6{
+  text-align: center;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+a{
+  text-decoration: none;
+}
+article footer{
+  border-top: 2px solid lightgrey;
+  margin: 12px;
+}
+.nav-header-bar{
+  display: inline-block;
+  float: right;
+  margin-top: 35px;
+  margin-right: 30px;
+}
+.nav-header-bar li{
+  display: inline-block;
+}
+.nav-header-bar li:after{
+  content: "|";
+  display: inline-block;
+  margin:0 10px;
+}
+.nav-header-bar li:last-child:after{
+  display: none;
+}
+.logo{
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  margin-left: 30px;
+}
+.header{
+  border-bottom: 2px solid lightgrey;
+}
+.main-container{
+  margin-top: 1em;
+  width: 1170px;
+  height: auto;
+  margin: auto;
+}
+.profile-image{
+  width: 170px;
+  height: 170px;
+  background-position: center center;
+  border-radius: 85px;
+  margin: 5px;
+  border: 1px solid #d3d3d3c9;
+}
+.speaker-article{
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  margin: 35px;
+}
+.speakers-line{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.text-center{
+  text-align: center;
+}
+.speaker-article h5{
+  text-align: center;
+}
+.speaker-article div{
+  margin: auto;
+}
+#profile-1{
+  background-image: url(../images/cat-example-1-min.jpeg);
+  background-size: 257px;
+}
+#profile-2{
+  background-image: url(../images/dog-example-1-min.jpeg);
+  background-size: 238px;
+}
+#profile-3{
+  background-image: url(../images/monkey-example-1-min.jpeg);
+  background-size: 170px;
+}
+#profile-4{
+  background-image: url(../images/potato-example-1-min.jpeg);
+  background-size: 269px;
+}
+#profile-5{
+  background-image: url(../images/cat-example-2-min.jpeg);
+  background-size: 252px;
+}
+#profile-6{
+  background-image: url(../images/giraffe-example-1-min.jpeg);
+  background-size: 348px;
+}
+#profile-7{
+  background-image: url(../images/cat-example-3-min.jpeg);
+  background-size: 159px;
+}
+#profile-8{
+  background-image: url(../images/cat-example-4-min.jpeg);
+  background-size: 252px;
+}
+#profile-9{
+  background-image: url(../images/sheep-example-1-min.jpeg);
+  background-size: 260px;
+}
