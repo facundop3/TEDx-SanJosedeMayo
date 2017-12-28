@@ -23,6 +23,18 @@ article footer{
   border-top: 2px solid lightgrey;
   margin: 12px;
 }
+.main-image{
+  width: 100%;
+  height: 666px;
+  background-image: url(../images/tedx.jpg);
+  background-size: 1485px;
+  background-position: center center ;
+
+}
+.main-image img{
+  width: inherit;
+  height: inherit;
+}
 .nav-header-bar{
   display: inline-block;
   float: right;
@@ -97,6 +109,9 @@ article footer{
 }
 .sponsor-image{
   margin: auto;
+}
+.team-line{
+  display: inline-flex;
 }
 .team-article{
   display: inline-block !important;
@@ -209,10 +224,15 @@ article footer{
     width: 100%;
     background-color: white;
     z-index: 100;
+    top: 0;
+  }
+  .main-image{
+    background-size: 1276px;
+    height: 625px;
   }
   .team-article{
-    max-width: 300px;
-    width: auto;
+    /*max-width: 350px;*/
+    width: 350px;
   }
   .speakers-line{
     display: unset;
@@ -228,6 +248,69 @@ article footer{
   }
   .nav-header-bar{
     font-size: 24px;
+  }
+  .team-line{
+    display:block;
+  }
+  .team-couple{
+    display: flex;
+    justify-content: center;
+  }
+  .team-profile-image{
+    width: 250px;
+    height: 250px;
+    border-radius: 140px;
+  }
+  #profile-1{
+    background-size: 257px;
+  }
+  #profile-2{
+    background-size: 238px;
+  }
+  #profile-3{
+    background-size: 170px;
+  }
+  #profile-4{
+    background-size: 269px;
+  }
+  #profile-5{
+    background-size: 252px;
+  }
+  #profile-6{
+    background-size: 348px;
+  }
+  #profile-7{
+    background-size: 159px;
+  }
+  #profile-8{
+    background-size: 252px;
+  }
+  #profile-9{
+    background-size: 260px;
+  }
+  #team-profile-1{
+    background-size: 370px;
+  }
+  #team-profile-2{
+    background-size: 360px;
+  }
+  #team-profile-3{
+    background-size: 335px;
+  }
+  #team-profile-4{
+    background-size: 355px;
+  }
+  #team-profile-5{
+    background-size: 239px;
+  }
+  #team-profile-6{
+    background-size: 370px;
+  }
+  #team-profile-7{
+    background-size: 345px;
+  }
+  #team-profile-8{
+    background-size: 320px;
   }
   #presentation{
     margin-top: 60px;
