@@ -226,7 +226,9 @@ article footer{
     height: 320px;
     border-radius: 170px;
   }
-
+  #presentation{
+    margin-top: 60px;
+  }
   #presentation h1{
     text-align: center;
   }
