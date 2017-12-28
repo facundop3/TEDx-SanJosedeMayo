@@ -51,7 +51,8 @@ article footer{
 }
 .main-container{
   margin-top: 1em;
-  width: 1170px;
+  width: auto;
+  max-width:1170px;
   height: auto;
   margin: auto;
 }
@@ -62,8 +63,15 @@ article footer{
   border-radius: 85px;
   margin: 5px;
 }
+.team-profile-image{
+  width: 170px;
+  height: 170px;
+  background-position: center center ;
+  border-radius: 85px;
+  margin: 5px;
+}
 .speaker-article{
-  display: inline-block !important;
+  display: inline-block;
   width: 300px;
   height: auto;
   margin: 35px;
@@ -108,7 +116,8 @@ article footer{
 }
 #team{
   margin-top: 1em;
-  width: 1467px;
+  width: auto;
+  max-width: 1467px;
   height: auto;
   margin: auto;
 }
@@ -180,14 +189,68 @@ article footer{
 }
 
 @media screen and (max-width: 1170px){
-  .main-container{
-    width: auto;
-    max-width:1170px;
+  section p {
+    font-size: 0.8em;
   }
-  #team{
-    width: auto;
-    max-width: 1467px;
+  h5{
+    font-size: 25px;
   }
+  h6{
+    font-size: 20px;
+  }
+  article footer{
+    /*border-top: unset;*/
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .team-article{
+    max-width: 300px;
+    width: auto;
+  }
+  .speakers-line{
+    display: unset;
+    justify-content: unset;
+  }
+  .speaker-article{
+    display: unset;
+  }
+  .profile-image{
+    width: 320px;
+    height: 320px;
+    border-radius: 170px;
+  }
+
+  #presentation h1{
+    text-align: center;
+  }
+  #profile-1{
+    background-size: 470px;
+  }
+  #profile-2{
+    background-size: 470px;
+  }
+  #profile-3{
+    background-size: 306px;
+  }
+  #profile-4{
+    background-size: 470px;
+  }
+  #profile-5{
+    background-size: 470px;
+  }
+  #profile-6{
+    background-size: 617px;
+  }
+  #profile-7{
+    background-size: 350px;
+  }
+  #profile-8{
+    background-size: 470px;
+  }
+  #profile-9{
+    background-size: 470px;
+  }
+
 }
 
 
