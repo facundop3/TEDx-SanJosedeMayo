@@ -203,6 +203,13 @@ article footer{
     margin-left: 100px;
     margin-right: 100px;
   }
+  .header{
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+  }
   .team-article{
     max-width: 300px;
     width: auto;
