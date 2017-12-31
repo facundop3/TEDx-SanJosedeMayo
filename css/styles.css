@@ -129,6 +129,23 @@ article footer{
   display: flex;
   justify-content: center;
 }
+.redes-main-container{
+  display: flex;
+  justify-content: center;
+}
+.redes-line{
+  display: flex;
+  justify-content: space-between;
+}
+.redes-item{
+  width: 40px;
+  height: 40px;
+  margin: 5px 40px;
+  background-size: 40px;
+}
+.redes-item a img{
+  display: inline-block;
+}
 #team{
   margin-top: 1em;
   width: auto;
@@ -202,8 +219,24 @@ article footer{
   background-image: url(../images/team/guy-3.jpeg);
   background-size: 260px;
 }
+#redes-fb{
+  background-image: url(../images/social/facebook.png);
+  }
+#redes-tw{
+  background-image: url(../images/social/twitter.png);
+  }
+#redes-in{
+  background-image: url(../images/social/instagram.png);
+  }
+  #contact{
+    margin-top: 40px;
+}
 
-@media screen and (max-width: 1170px){
+#contact header {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1447px){
   section p {
     font-size: 0.8em;
   }
@@ -260,6 +293,12 @@ article footer{
     width: 250px;
     height: 250px;
     border-radius: 140px;
+  }
+  .redes-item {
+    width: 60px;
+    height: 60px;
+    margin: 5px 60px;
+    background-size: 40px;
   }
   #profile-1{
     background-size: 257px;
