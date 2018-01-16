@@ -23,8 +23,9 @@ article footer{
   border-top: 2px solid lightgrey;
   margin: 12px;
 }
-.red{
+.red-title{
   color: #FE2B06;
+  font-size: xx-large;
 }
 .main-image{
   width: 100%;
@@ -91,7 +92,7 @@ article footer{
   height: auto;
   margin: 35px;
 }
-.speakers-line{
+.speakers-line, .team-line{
   margin: auto;
   display: flex;
   justify-content: center;;
@@ -113,9 +114,7 @@ article footer{
 .sponsor-image{
   margin: auto;
 }
-.team-line{
-  display: inline-flex;
-}
+
 .team-article{
   display: inline-block !important;
   width: 300px;
@@ -206,8 +205,8 @@ article footer{
   background-size: 252px;
 }
 #team-profile-6{
-  background-image: url(../images/anonymouse/who.jpeg);
-  background-size: 252px;
+  background-image: url(../images/team/facundo.jpg);
+  background-size: 289px;
 }#team-profile-7{
   background-image: url(../images/team/girl-5.jpeg);
   background-size: 260px;
@@ -230,6 +229,17 @@ article footer{
 
 #contact header {
     margin-bottom: 30px;
+}
+#youtube-video{
+  display: block;
+}
+#video-container{
+  margin: auto;
+}
+#introduction{
+  max-width: 864px;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1447px){
@@ -263,7 +273,7 @@ article footer{
     /*max-width: 350px;*/
     width: 350px;
   }
-  .speakers-line{
+  .speakers-line, .team-line{
     display: unset;
     justify-content: unset;
   }
@@ -333,7 +343,7 @@ article footer{
     background-size: 380px;
   }
   #team-profile-6{
-    background-size: 380px;
+    background-size: 422px;
   }
   #presentation{
     margin-top: 60px;
