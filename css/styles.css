@@ -23,6 +23,9 @@ article footer{
   border-top: 2px solid lightgrey;
   margin: 12px;
 }
+.red{
+  color: #FE2B06;
+}
 .main-image{
   width: 100%;
   height: 666px;
@@ -91,7 +94,7 @@ article footer{
 .speakers-line{
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;;
 }
 .text-center{
   text-align: center;
@@ -154,64 +157,57 @@ article footer{
   margin: auto;
 }
 #profile-1{
-  background-image: url(../images/cat-example-1-min.jpeg);
-  background-size: 257px;
+  background-image: url(../images/anonymouse/who.jpeg);
+  background-size: 252px;
 }
 #profile-2{
-  background-image: url(../images/dog-example-1-min.jpeg);
-  background-size: 238px;
+  background-image: url(../images/anonymouse/who.jpeg);
+  background-size: 252px;
 }
 #profile-3{
-  background-image: url(../images/monkey-example-1-min.jpeg);
-  background-size: 170px;
+  background-image: url(../images/anonymouse/who.jpeg);
+  background-size: 252px;
 }
 #profile-4{
-  background-image: url(../images/potato-example-1-min.jpeg);
-  background-size: 269px;
+  background-image: url(../images/anonymouse/who.jpeg);
+  background-size: 252px;
 }
 #profile-5{
-  background-image: url(../images/cat-example-2-min.jpeg);
+  background-image: url(../images/anonymouse/who.jpeg);
   background-size: 252px;
 }
 #profile-6{
-  background-image: url(../images/giraffe-example-1-min.jpeg);
-  background-size: 348px;
-}
-#profile-7{
-  background-image: url(../images/cat-example-3-min.jpeg);
-  background-size: 159px;
-}
-#profile-8{
-  background-image: url(../images/cat-example-4-min.jpeg);
+  background-image: url(../images/anonymouse/who.jpeg);
   background-size: 252px;
 }
-#profile-9{
-  background-image: url(../images/sheep-example-1-min.jpeg);
-  background-size: 260px;
+#profile-7{
+  background-image: url(../images/anonymouse/who.jpeg);
+  background-size: 252px;
 }
+
 #team-profile-1{
-  background-image: url(../images/team/girl-1.jpeg);
-  background-size: 260px;
+  background-image: url(../images/team/diego.jpeg);
+  background-size: 308px;
 }
 #team-profile-2{
-  background-image: url(../images/team/girl-2.jpeg);
-  background-size: 260px;
+  background-image: url(../images/team/evangelina.jpeg);
+  background-size: 162px;
 }
 #team-profile-3{
-  background-image: url(../images/team/guy-1.jpeg);
-  background-size: 260px;
+  background-image: url(../images/team/horacio.jpeg);
+  background-size: 160px;
 }
 #team-profile-4{
-  background-image: url(../images/team/girl-3.jpeg);
-  background-size: 260px;
+  background-image: url(../images/anonymouse/who.jpeg);
+  background-size: 252px;
 }
 #team-profile-5{
-  background-image: url(../images/team/girl-4.jpeg);
-  background-size: 164px;
+  background-image: url(../images/anonymouse/who.jpeg);
+  background-size: 252px;
 }
 #team-profile-6{
-  background-image: url(../images/team/guy-2.jpeg);
-  background-size: 260px;
+  background-image: url(../images/anonymouse/who.jpeg);
+  background-size: 252px;
 }#team-profile-7{
   background-image: url(../images/team/girl-5.jpeg);
   background-size: 260px;
@@ -304,52 +300,40 @@ article footer{
     background-size: 257px;
   }
   #profile-2{
-    background-size: 238px;
+    background-size: 257px;
   }
   #profile-3{
-    background-size: 170px;
+    background-size: 257px;
   }
   #profile-4{
-    background-size: 269px;
+    background-size: 257px;
   }
   #profile-5{
-    background-size: 252px;
+    background-size: 257px;
   }
   #profile-6{
-    background-size: 348px;
+    background-size: 502px;
   }
   #profile-7{
-    background-size: 159px;
-  }
-  #profile-8{
-    background-size: 252px;
-  }
-  #profile-9{
-    background-size: 260px;
+    background-size: 502px;
   }
   #team-profile-1{
-    background-size: 370px;
+    background-size: 440px;
   }
   #team-profile-2{
-    background-size: 360px;
+    background-size: 250px;
   }
   #team-profile-3{
-    background-size: 335px;
+    background-size: 253px;
   }
   #team-profile-4{
-    background-size: 355px;
+    background-size: 380px;
   }
   #team-profile-5{
-    background-size: 239px;
+    background-size: 380px;
   }
   #team-profile-6{
-    background-size: 370px;
-  }
-  #team-profile-7{
-    background-size: 345px;
-  }
-  #team-profile-8{
-    background-size: 320px;
+    background-size: 380px;
   }
   #presentation{
     margin-top: 60px;
@@ -364,7 +348,7 @@ article footer{
     background-size: 470px;
   }
   #profile-3{
-    background-size: 306px;
+    background-size: 470px;
   }
   #profile-4{
     background-size: 470px;
@@ -373,20 +357,10 @@ article footer{
     background-size: 470px;
   }
   #profile-6{
-    background-size: 617px;
-  }
-  #profile-7{
-    background-size: 350px;
-  }
-  #profile-8{
     background-size: 470px;
-  }
-  #profile-9{
-    background-size: 470px;
-  }
 
 }
-
+}
 
 
 /*External CSS*/
