@@ -11,17 +11,21 @@ a:hover{
 }
 footer h6{
   text-align: center;
+  font-size: 20px;
 }
 img{
   max-width: 100%;
   max-height: 100%;
 }
-a{
+.tedx-description{
   text-decoration: none;
 }
 article footer{
   border-top: 2px solid lightgrey;
   margin: 12px;
+}
+p{
+  font-size: 20px;
 }
 .red-title{
   color: #FE2B06;
@@ -73,18 +77,22 @@ article footer{
   margin: auto;
 }
 .profile-image{
-  width: 170px;
-  height: 170px;
+  width: 300px;
+  height: 300px;
   background-position: center center ;
-  border-radius: 85px;
+  border-radius: 50%;
   margin: 5px;
 }
 .team-profile-image{
-  width: 170px;
-  height: 170px;
+  width: 300px;
+  height: 300px;
   background-position: center center ;
-  border-radius: 85px;
+  border-radius: 50%;
   margin: 5px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+
 }
 .speaker-article{
   display: inline-block;
@@ -137,7 +145,7 @@ article footer{
 }
 .redes-line{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .redes-item{
   width: 40px;
@@ -148,6 +156,46 @@ article footer{
 .redes-item a img{
   display: inline-block;
 }
+.team-description{
+width: 80%;
+  margin: 25% 17%;
+}
+.team-shadow{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgba(32, 152, 209, .7);
+  visibility: hidden;
+  transition-timing-function: ease;
+  justify-content: center;
+  display: flex;
+}
+
+.team-profile-image:hover .team-shadow{
+  visibility: visible;
+  position: absolute;
+  /*top: 22%;*/
+}
+.social-line{
+  display: flex;
+  justify-content: center;
+  max-height: 57px;
+  position: absolute;
+  top: 65%;
+  left: 20%;
+}
+.social-line a {
+  width: 33px;
+  height: auto;
+  margin: 0 10px;
+}
+.social-line a img{
+  display: inline-block;
+}
+.redes-item a {
+  display: inline-block;
+}
+
 #team{
   margin-top: 1em;
   width: auto;
@@ -156,44 +204,48 @@ article footer{
   margin: auto;
 }
 #profile-1{
-    background-size: 252px;
+    background-size: 490px;
 }
 #profile-2{
-    background-size: 252px;
+    background-size: 490px;
 }
 #profile-3{
-    background-size: 252px;
+    background-size: 490px;
 }
 #profile-4{
-    background-size: 252px;
+    background-size: 490px;
 }
 #profile-5{
-    background-size: 252px;
+    background-size: 490px;
 }
 #profile-6{
-    background-size: 252px;
+    background-size: 490px;
 }
 #profile-7{
-    background-size: 252px;
+    background-size: 490px;
 }
 
 #team-profile-1{
-    background-size: 308px;
+    background-size: 455px;
 }
 #team-profile-2{
-    background-size: 162px;
+    background-size: 260px;
 }
 #team-profile-3{
-    background-size: 160px;
+    background-size: 290px;
 }
 #team-profile-4{
-    background-size: 252px;
+  background-size: 295px;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 #team-profile-5{
-    background-size: 252px;
+  background-size: 295px;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 #team-profile-6{
-    background-size: 289px;
+    background-size: 520px;
 }
 #contact{
     margin-top: 40px;
@@ -213,7 +265,22 @@ article footer{
   margin: auto;
   margin-bottom: 30px;
 }
-
+#presentation{
+  margin-top: 0;
+}
+#website-footer{
+  display: flex;
+  justify-content: center;
+}
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+.cool-efect-for-lines{
+  transition-duration: 9s;
+}
 @media screen and (max-width: 1447px){
   section p {
     font-size: 0.8em;
@@ -222,12 +289,18 @@ article footer{
     font-size: 25px;
   }
   h6{
-    font-size: 20px;
+    font-size: 15px;
   }
   article footer{
     /*border-top: unset;*/
     margin-left: 100px;
     margin-right: 100px;
+  }
+  footer h6{
+    font-size: 30px;
+  }
+  #presentation{
+  margin-top: 60px;
   }
   .header{
     display: inline-block;
@@ -268,15 +341,30 @@ article footer{
     justify-content: center;
   }
   .team-profile-image{
-    width: 250px;
-    height: 250px;
-    border-radius: 140px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    position: relative;
+
+  }
+  .team-shadow{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
   }
   .redes-item {
     width: 60px;
     height: 60px;
     margin: 5px 60px;
     background-size: 40px;
+  }
+  .social-line  {
+    left: 17%;
+  }
+  .social-line a {
+    width: 50px;
+    height: auto;
+    margin: 0 15px 0 0;
   }
   #profile-1{
     background-size: 257px;
@@ -306,19 +394,19 @@ article footer{
     background-size: 250px;
   }
   #team-profile-3{
-    background-size: 253px;
+    background-size: 266px;
   }
   #team-profile-4{
-    background-size: 380px;
+    background-size: 310px;
+    background-position-x: 0px;
+  }
   }
   #team-profile-5{
-    background-size: 380px;
+    background-size: 310px;
+    background-position-x: 0px;
   }
   #team-profile-6{
-    background-size: 422px;
-  }
-  #presentation{
-    margin-top: 60px;
+    background-size: 520px;
   }
   #presentation h1{
     text-align: center;
