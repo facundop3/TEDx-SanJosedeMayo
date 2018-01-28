@@ -25,7 +25,7 @@ article footer{
   margin: 12px;
 }
 p{
-  font-size: 20px;
+  font-size: 21px;
 }
 .red-title{
   color: #FE2B06;
@@ -272,6 +272,14 @@ width: 80%;
   display: flex;
   justify-content: center;
 }
+#about-ted{
+  background-size: 515px;
+  background-position-x: -82px;
+}
+#about-tedx{
+  background-size: 390px;
+  background-repeat: no-repeat;
+}
 .hidden{
      opacity:0;
 }
@@ -281,9 +289,21 @@ width: 80%;
 .cool-efect-for-lines{
   transition-duration: 9s;
 }
+.about-container{
+  display: inline-block;
+}
+.about-text{
+  display: inline-block;
+  width: 380px;
+  height: 200px;
+}
+.about-line{
+  /*display: box;*/
+  width: 100%;
+}
 @media screen and (max-width: 1447px){
   section p {
-    font-size: 0.8em;
+    font-size: 21px;
   }
   h5{
     font-size: 25px;
@@ -365,6 +385,9 @@ width: 80%;
     width: 50px;
     height: auto;
     margin: 0 15px 0 0;
+  }
+  .about-text{
+    width: 430px;
   }
   #profile-1{
     background-size: 257px;
