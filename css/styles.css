@@ -122,6 +122,9 @@ p{
 .sponsor-image{
   margin: auto;
 }
+.sponsor-image img{
+  max-width: 400px;
+}
 
 .team-article{
   display: inline-block !important;
@@ -301,6 +304,10 @@ width: 80%;
   /*display: box;*/
   width: 100%;
 }
+#sponsors{
+  margin-bottom: 25px;
+}
+
 @media screen and (max-width: 1447px){
   section p {
     font-size: 21px;
