@@ -10,6 +10,7 @@
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   </head>
   <body>
+
     <header class="header">
       <!-- logo -->
       <figure class="logo">
@@ -185,127 +186,24 @@
     <header>
       <h2 class="text-center">Nuestro equipo <i class="em em-heart"></i></h2>
     </header>
+    <div id="app">
     <br>
       <section id="team">
         <div class="team-line cool-efect-for-lines">
           <div class="team-couple">
-            <article class="team-article">
-              <div class="lazy hvr-border-fade team-profile-image" id="team-profile-1" data-src="images/team/diego.jpeg">
-                <div class="team-shadow">
-                <p class='team-description'> Hola hola hola !
-                Here goes your personal summary..
-                <div class="social-line">
-                  <a target="_blank" href="https://www.facebook.com/diego.barboza.9026">
-                    <img src="images/social/facebook.png" alt="Facebook">
-                  </a>
-                </div>
-              </p></div>
-              </div>
-              <footer>
-                <h6>Diego Barboza</h6>
-              </footer>
-            </article>
-            <article class="team-article">
-              <div class="lazy hvr-border-fade team-profile-image" id="team-profile-2" data-src="images/team/evangelina.jpeg">
-                <div class="team-shadow">
-                  <p class='team-description'> Hola hola hola !
-                    Here goes your personal summary..
-                    <div class="social-line">
-                      <a target="_blank" href="https://www.facebook.com/evatota">
-                        <img src="images/social/facebook.png" alt="Facebook">
-                      </a>
-                      </div>
-                  </p>
-                </div>
-              </div>
-              <footer>
-                <h6>Evangelina Hernández</h6>
-              </footer>
-            </article>
-            <article class="team-article">
-              <div class="lazy hvr-border-fade team-profile-image" id="team-profile-3" data-src="images/team/horacio.jpeg">
-                <div class="team-shadow">
-                <p class='team-description'> Hola hola hola !
-                Here goes your personal summary..
-                <div class="social-line">
-                  <a target="_blank" href="https://www.fb.com/Horacio.maxx">
-                    <img src="images/social/facebook.png" alt="Facebook">
-                  </a>
-                </div>
-              </p></div>
-              </div>
-              <footer>
-                <h6>Horacio Piriz</h6>
-              </footer>
-            </article>
+                  <team-member v-bind:member="teamMembers[0]"></team-member>
+                  <team-member v-bind:member="teamMembers[1]"></team-member>
+                  <team-member v-bind:member="teamMembers[2]"></team-member>
         </div>
         </div>
         <div class="team-line cool-efect-for-lines">
           <div class="team-couple">
-            <article class="team-article">
-              <div class="lazy hvr-border-fade team-profile-image" id="team-profile-4" data-src="images/team/matias.jpeg">
-                <div class="team-shadow">
-                <p class='team-description'> Hola hola hola !
-                Here goes your personal summary..
-
-              </p>
-              </div>
-              </div>
-              <footer>
-                <h6>Matías Laca</h6>
-              </footer>
-            </article>
-            <article class="team-article">
-              <div class="lazy hvr-border-fade team-profile-image" id="team-profile-5" data-src="images/team/gonzalo.jpeg">
-                <div class="team-shadow">
-                <p class='team-description'> Hola hola hola !
-                Here goes your personal summary..
-                <div class="social-line">
-                  <a target="_blank" href="https://www.facebook.com/gonzaloprado8/">
-                    <img src="images/social/facebook.png" alt="Facebook">
-                  </a>
-                  <a target="_blank"  href="https://www.instagram.com/gonzaloprado8/">
-                    <img src="images/social/instagram.png" alt="Instagram">
-                  </a>
-                </div>
-              </p>
-              </div>
-              </div>
-              <footer>
-                <h6>Gonzalo Prado</h6>
-              </footer>
-            </article>
-            <article class="team-article">
-              <div class="lazy hvr-border-fade team-profile-image" id="team-profile-6" data-src="images/team/facundo.jpg">
-                <div class="team-shadow">
-                  <p class='team-description'>A curious guy that haves fun researching how things works...
-                  <div class="social-line">
-                    <!-- <a target="_blank" href="https://www.fb.com/facundo.petre">
-                      <img src="images/social/facebook.png" alt="Facebook">
-                    </a>
-                    <a target="_blank"  href="https://twitter.com/facup3">
-                      <img src="images/social/twitter.png" alt="Twitter">
-                    </a> -->
-                    <a target="_blank"  href="https://www.instagram.com/facup3/">
-                      <img src="images/social/instagram.png" alt="Instagram">
-                    </a>
-                    <a target="_blank"  href="https://www.linkedin.com/in/facundopetre/">
-                      <img src="images/social/linkedin.png" alt="Linkedin">
-                    </a>
-                    <a target="_blank"  href="https://github.com/facundop3">
-                      <img src="images/social/github.png" alt="Github">
-                    </a>
-
-                  </div>
-                </p>
-                </div>
-              </div>
-              <footer>
-                <h6>Facundo Petre</h6>
-              </footer>
-            </article>
+            <team-member v-bind:member="teamMembers[3]"></team-member>
+            <team-member v-bind:member="teamMembers[4]"></team-member>
+            <team-member v-bind:member="teamMembers[5]"></team-member>
         </div>
         </div>
+      </div>
       </section>
     <footer id="website-footer">
       <!-- logo -->
@@ -314,10 +212,6 @@
           <img src="images/TEDxSJ-small.png" alt="TEDx SanJosédeMayo">
         </a>
       </figure>
-      <!-- <section id="contact"> -->
-      <!-- <header> -->
-      <!-- <h2 class="text-center">Redes <i class="em em-hash"></i></h2> -->
-      <!-- </header> -->
       <div class="redes-line">
       <div class="redes-item">
         <a target="_blank" href="https://www.facebook.com/TEDxSanJosedeMayo/" class="" >
@@ -336,14 +230,19 @@
       </div>
       <!-- </section> -->
     </footer>
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- jquery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
     <!-- jquery lazy-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.7/jquery.lazy.min.js"></script>
     </script>
+    <!-- Index js -->
+    <script type="text/javascript" src="js/index.js"></script>
+
     <script type="text/javascript">
     $(()=> $('.lazy').lazy());
-    </script>
+    </script> -->
     <!-- jquery is on viewport -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
     <script type="text/javascript">
