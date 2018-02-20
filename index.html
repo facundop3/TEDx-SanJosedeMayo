@@ -10,7 +10,6 @@
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   </head>
   <body>
-
     <header class="header">
       <!-- logo -->
       <figure class="logo">
@@ -53,8 +52,6 @@
             <div class="about-text lazy" id="about-ted" data-src="images/ted-logo.png">
             </div>
           <div class="about-text">
-          <!-- <h1 class="red-title">¿Qué es TED?</h1> -->
-          <!-- <br> -->
           <p class="tedx-description">TED (Tecnología, Entretenimiento y Diseño), es un evento anual donde algunos de los pensadores y emprendedores más grandes del mundo son invitados a exponer que es lo que más les apsiona.</p>
         </div>
       </div>
@@ -65,9 +62,7 @@
           <p>TEDx se trata de un conjunto de charlas locales, organizadas de forma independiente y voluntaría que permiten disfrutar en diferentes paises del mundo de una experiencia similar a las conferencias TED (<a target="_blank" href="https://www.ted.com/about/programs-initiatives/tedx-program">ver más</a>).</p>
           <br>
         </div>
-        <div class="about-text lazy" id="about-tedx" data-src="images/tedx-logo.jpg">
-
-        </div>
+        <div class="about-text lazy" id="about-tedx" data-src="images/tedx-logo.jpg"></div>
       </div>
       </div>
           <h2>O mejor aún:</h2>
@@ -82,119 +77,50 @@
         <header>
           <h2 class="text-center">Nuestros Oradores <i class="em em-microphone"></i></h2>
         </header>
+        <div id="app">
         <br>
         <div class="speakers-line cool-efect-for-lines">
-        <article class="speaker-article">
-          <div class="lazy hvr-border-fade profile-image" id="profile-1" data-src="images/anonymouse/who.jpeg"></div><br>
-          <h5>¿Adivina quién?</h5>
-          <footer>
-            <h6>Redoble de tambores <i class="em em-drum_with_drumsticks"></i></h6>
-          </footer>
-        </article>
-        <article class="speaker-article  ">
-          <div class="lazy hvr-border-fade profile-image" id="profile-2" data-src="images/anonymouse/who.jpeg"></div><br>
-          <h5>¿Adivina quién?</h5>
-          <footer>
-            <h6>Redoble de tambores <i class="em em-drum_with_drumsticks"></i></h6>
-          </footer>
-        </article>
-        <article class="speaker-article  ">
-          <div class="lazy hvr-border-fade profile-image" id="profile-3" data-src="images/anonymouse/who.jpeg"></div><br>
-          <h5>¿Adivina quién?</h5>
-          <footer>
-            <h6>Redoble de tambores <i class="em em-drum_with_drumsticks"></i></h6>
-          </footer>
-        </article>
-      </div>
+          <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
+          <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
+          <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
+        </div>
         <div class="speakers-line cool-efect-for-lines">
-        <article class="speaker-article  ">
-          <div class="lazy hvr-border-fade profile-image" id="profile-4" data-src="images/anonymouse/who.jpeg"></div><br>
-          <h5>¿Adivina quién?</h5>
-          <footer>
-            <h6>Redoble de tambores <i class="em em-drum_with_drumsticks"></i></h6>
-          </footer>
-        </article>
-        <article class="speaker-article  ">
-          <div class="lazy hvr-border-fade profile-image" id="profile-5" data-src="images/anonymouse/who.jpeg"></div><br>
-          <h5>¿Adivina quién?</h5>
-          <footer>
-            <h6>Redoble de tambores <i class="em em-drum_with_drumsticks"></i></h6>
-          </footer>
-        </article>
-        <article class="speaker-article  ">
-          <div class="lazy hvr-border-fade profile-image" id="profile-6" data-src="images/anonymouse/who.jpeg"></div><br>
-          <h5>¿Adivina quién?</h5>
-          <footer>
-            <h6>Redoble de tambores <i class="em em-drum_with_drumsticks"></i></h6>
-          </footer>
-        </article>
-      </div>
+          <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
+          <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
+          <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
+        </div>
         <div class="speakers-line cool-efect-for-lines">
-        <article class="speaker-article  ">
-          <div class="lazy hvr-border-fade profile-image" id="profile-7" data-src="images/anonymouse/who.jpeg"></div><br>
-          <h5>¿Adivina quién?</h5>
-          <footer>
-            <h6>Redoble de tambores <i class="em em-drum_with_drumsticks"></i></h6>
-          </footer>
-        </article>
-      </div>
+          <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
+        </div>
       <br>
       </section>
       <section id="sponsors">
         <header style="margin-bottom:80px;">
           <h2 class="text-center">Colabora:<i class="em em-clap"></i></h2>
-          <div class="sponsors-line">
-            <figure class="sponsor-image">
-              <a href="http://www.sanjose.gub.uy/" target="_blank">
-                <img data-src="images/sponsors/san-jose.jpeg" class="lazy" alt="Marcre">
-              </a>
-            </figure>
-          </div>
+          <tedx-sponsor v-bind:sponsor="sponsors[0]"></tedx-sponsor>
         </header>
         <header style="margin-bottom:80px;">
           <h2 class="text-center">Nuestros Sponsors <i class="em em-clap"></i></h2>
         </header>
-          <div class="sponsors-line">
-            <figure class="sponsor-image">
-              <a href="https://servicios.amsj.com.uy/" target="_blank">
-                <img data-src="images/sponsors/amsj.png" class="lazy" alt="AMSJ">
-              </a>
-            </figure>
-            </div>
-            <div class="sponsors-line">
-            <figure class="sponsor-image">
-              <a href="http://www.marcre.com.uy/" target="_blank">
-                <img data-src="images/sponsors/marcre.png" class="lazy" alt="Marcre">
-              </a>
-            </figure>
-          </div>
-          <div class="sponsors-line">
-            <figure class="sponsor-image">
-              <img data-src="images/sponsors/peraza-gonzales.png" class="lazy" alt="Peraza González">
-            </figure>
-          </div>
-          <div class="sponsors-line">
-            <figure class="sponsor-image">
-              <a href="http://www.opticaflorida.com.uy/v3/index.php" target="_blank">
-                <img data-src="images/sponsors/optica-florida.jpeg" class="lazy" alt="Optica Florida">
-              </a>
-            </figure>
-            </div>
+            <tedx-sponsor v-bind:sponsor="sponsors[1]"></tedx-sponsor>
+            <tedx-sponsor v-bind:sponsor="sponsors[2]"></tedx-sponsor>
+            <tedx-sponsor v-bind:sponsor="sponsors[3]"></tedx-sponsor>
+            <tedx-sponsor v-bind:sponsor="sponsors[4]"></tedx-sponsor>
       </section>
-    </div>
     <br>
     <header>
       <h2 class="text-center">Nuestro equipo <i class="em em-heart"></i></h2>
     </header>
-    <div id="app">
     <br>
       <section id="team">
         <div class="team-line cool-efect-for-lines">
+          <div id="app">
           <div class="team-couple">
                   <team-member v-bind:member="teamMembers[0]"></team-member>
                   <team-member v-bind:member="teamMembers[1]"></team-member>
                   <team-member v-bind:member="teamMembers[2]"></team-member>
         </div>
+      </div>
         </div>
         <div class="team-line cool-efect-for-lines">
           <div class="team-couple">
@@ -203,7 +129,8 @@
             <team-member v-bind:member="teamMembers[5]"></team-member>
         </div>
         </div>
-      </div>
+    </div>
+  </div>
       </section>
     <footer id="website-footer">
       <!-- logo -->

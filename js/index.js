@@ -30,8 +30,28 @@ $('document').ready(function(){
     </article>`
   })
 
-// Vue.component Add Speaker component
+Vue.component('tedx-speaker',{
+  props: ['speaker'],
+  template:`<article class="speaker-article">
+              <div class="lazy hvr-border-fade profile-image" id="profile-1" v-bind:data-src="speaker.imageUrl"></div><br>
+              <h5>{{speaker.name}}</h5>
+              <footer>
+                <h6>{{speaker.talkTitle}}<i class="em em-drum_with_drumsticks"></i></h6>
+              </footer>
+            </article>`
+})
 
+Vue.component('tedx-sponsor', {
+  props: ['sponsor'],
+  template: `<div class="sponsors-line">
+                <figure class="sponsor-image">
+                <a v-bind:href="sponsor.webUrl" target="_blank">
+                  <img v-bind:data-src="sponsor.imgUrl" class="lazy" v-bind:alt="sponsor.name">
+                  </a>
+              </figure>
+            </div>`
+
+})
 let app = new Vue({
   el: '#app',
   data: {
@@ -44,10 +64,17 @@ let app = new Vue({
       {name: 'Facundo Petre' , personalSummary:'A curious guy that haves fun researching how things works...', fbUrl:'' ,twUrl:'',inUrl:'https://www.instagram.com/facup3/', lnUrl:'https://www.linkedin.com/in/facundopetre/',ghUrl:'https://github.com/facundop3', imageUrl:'images/team/facundo.jpg', teamId:'team-profile-6'}
     ],
     speakers: [
-      {name: 'Diego Barboza' , personalSummary:'Hola hola hola ! Here goes your personal summary..', fbUrl:'https://www.fb.com/diego.barboza.9026' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/team/diego.jpeg', teamId:'team-profile-1'}
+      {name: '¿Adivina quién?' , personalSummary:'Hola hola hola ! Here goes your personal summary..', talkTitle: 'Redoble de tambores',fbUrl:'https://www.fb.com/diego.barboza.9026' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/anonymouse/who.jpeg', teamId:'team-profile-1'},
+    ],
+    sponsors: [
+      {name:'Gobierno departamental de San José', imgUrl:'images/sponsors/san-jose.jpeg', webUrl:'http://www.sanjose.gub.uy/'},
+      {name:'AMSJ', imgUrl:'images/sponsors/amsj.png', webUrl:'http://www.amsj.com.uy/'},
+      {name:'Marcre', imgUrl:'images/sponsors/marcre.png', webUrl:'http://www.marcre.com.uy/'},
+      {name:'Peraza González', imgUrl:'images/sponsors/peraza-gonzales.png', webUrl:''},
+      {name:'Optica Florida', imgUrl:'images/sponsors/optica-florida.jpeg', webUrl:'http://www.opticaflorida.com.uy/v3/index.php'},
     ],
   }
 })
 
-console.log("Yep loaded");
+
 })
