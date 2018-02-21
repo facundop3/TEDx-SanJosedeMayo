@@ -45,7 +45,7 @@
         <div class="main-image">
         </div>
       <br>
-      <div class="main-container">
+      <div class="main-container" >
         <section id="introduction">
           <div class="about-container">
             <div class="about-line">
@@ -74,10 +74,11 @@
         </section>
       </section>
       <section id="speakers">
+        <div id="app1">
+
         <header>
           <h2 class="text-center">Nuestros Oradores <i class="em em-microphone"></i></h2>
         </header>
-        <div id="app">
         <br>
         <div class="speakers-line cool-efect-for-lines">
           <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
@@ -93,8 +94,11 @@
           <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
         </div>
       <br>
+    </div>
       </section>
       <section id="sponsors">
+        <div id="app2">
+
         <header style="margin-bottom:80px;">
           <h2 class="text-center">Colabora:<i class="em em-clap"></i></h2>
           <tedx-sponsor v-bind:sponsor="sponsors[0]"></tedx-sponsor>
@@ -106,6 +110,7 @@
             <tedx-sponsor v-bind:sponsor="sponsors[2]"></tedx-sponsor>
             <tedx-sponsor v-bind:sponsor="sponsors[3]"></tedx-sponsor>
             <tedx-sponsor v-bind:sponsor="sponsors[4]"></tedx-sponsor>
+          </div>
       </section>
     <br>
     <header>
@@ -113,14 +118,13 @@
     </header>
     <br>
       <section id="team">
+        <div id="app3">
         <div class="team-line cool-efect-for-lines">
-          <div id="app">
           <div class="team-couple">
                   <team-member v-bind:member="teamMembers[0]"></team-member>
                   <team-member v-bind:member="teamMembers[1]"></team-member>
                   <team-member v-bind:member="teamMembers[2]"></team-member>
         </div>
-      </div>
         </div>
         <div class="team-line cool-efect-for-lines">
           <div class="team-couple">
@@ -129,8 +133,9 @@
             <team-member v-bind:member="teamMembers[5]"></team-member>
         </div>
         </div>
-    </div>
   </div>
+</div>
+</div>
       </section>
     <footer id="website-footer">
       <!-- logo -->

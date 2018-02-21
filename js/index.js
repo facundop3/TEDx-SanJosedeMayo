@@ -52,8 +52,28 @@ Vue.component('tedx-sponsor', {
             </div>`
 
 })
-let app = new Vue({
-  el: '#app',
+var app = new Vue({
+  el: '#app1',
+  data: {
+    speakers: [
+      {name: '¿Adivina quién?' , personalSummary:'Hola hola hola ! Here goes your personal summary..', talkTitle: 'Redoble de tambores',fbUrl:'https://www.fb.com/diego.barboza.9026' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/anonymouse/who.jpeg', teamId:'team-profile-1'},
+    ],
+  }
+})
+var app = new Vue({
+  el: '#app2',
+  data: {
+    sponsors: [
+      {name:'Gobierno departamental de San José', imgUrl:'images/sponsors/san-jose.jpeg', webUrl:'http://www.sanjose.gub.uy/'},
+      {name:'AMSJ', imgUrl:'images/sponsors/amsj.png', webUrl:'http://www.amsj.com.uy/'},
+      {name:'Marcre', imgUrl:'images/sponsors/marcre.png', webUrl:'http://www.marcre.com.uy/'},
+      {name:'Peraza González', imgUrl:'images/sponsors/peraza-gonzales.png', webUrl:''},
+      {name:'Optica Florida', imgUrl:'images/sponsors/optica-florida.jpeg', webUrl:'http://www.opticaflorida.com.uy/v3/index.php'},
+    ]
+  }
+})
+var app = new Vue({
+  el: '#app3',
   data: {
     teamMembers: [
       {name: 'Diego Barboza' , personalSummary:'Hola hola hola ! Here goes your personal summary..', fbUrl:'https://www.fb.com/diego.barboza.9026' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/team/diego.jpeg', teamId:'team-profile-1'},
@@ -62,19 +82,8 @@ let app = new Vue({
       {name: 'Matías Laca' , personalSummary:'Hola hola hola ! Here goes your personal summary..', fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/team/matias.jpeg', teamId:'team-profile-4'},
       {name: 'Gonzalo Prado' , personalSummary:'Hola hola hola ! Here goes your personal summary..', fbUrl:'https://www.fb.com/gonzaloprado8/' ,twUrl:'',inUrl:'https://www.instagram.com/gonzaloprado8/', lnUrl:'',ghUrl:'', imageUrl:'images/team/gonzalo.jpeg', teamId:'team-profile-5'},
       {name: 'Facundo Petre' , personalSummary:'A curious guy that haves fun researching how things works...', fbUrl:'' ,twUrl:'',inUrl:'https://www.instagram.com/facup3/', lnUrl:'https://www.linkedin.com/in/facundopetre/',ghUrl:'https://github.com/facundop3', imageUrl:'images/team/facundo.jpg', teamId:'team-profile-6'}
-    ],
-    speakers: [
-      {name: '¿Adivina quién?' , personalSummary:'Hola hola hola ! Here goes your personal summary..', talkTitle: 'Redoble de tambores',fbUrl:'https://www.fb.com/diego.barboza.9026' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/anonymouse/who.jpeg', teamId:'team-profile-1'},
-    ],
-    sponsors: [
-      {name:'Gobierno departamental de San José', imgUrl:'images/sponsors/san-jose.jpeg', webUrl:'http://www.sanjose.gub.uy/'},
-      {name:'AMSJ', imgUrl:'images/sponsors/amsj.png', webUrl:'http://www.amsj.com.uy/'},
-      {name:'Marcre', imgUrl:'images/sponsors/marcre.png', webUrl:'http://www.marcre.com.uy/'},
-      {name:'Peraza González', imgUrl:'images/sponsors/peraza-gonzales.png', webUrl:''},
-      {name:'Optica Florida', imgUrl:'images/sponsors/optica-florida.jpeg', webUrl:'http://www.opticaflorida.com.uy/v3/index.php'},
-    ],
+    ]
   }
 })
-
 
 })
