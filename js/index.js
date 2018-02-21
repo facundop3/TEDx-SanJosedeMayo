@@ -36,7 +36,7 @@ Vue.component('tedx-speaker',{
               <div class="lazy hvr-border-fade profile-image" id="profile-1" v-bind:data-src="speaker.imageUrl"></div><br>
               <h5>{{speaker.name}}</h5>
               <footer>
-                <h6>{{speaker.talkTitle}}<i class="em em-drum_with_drumsticks"></i></h6>
+                <h6>{{speaker.talkTitle}}</h6>
               </footer>
             </article>`
 })
