@@ -123,7 +123,7 @@ p{
   margin: auto;
 }
 .sponsor-image img{
-  max-width: 400px;
+    max-width: 331px;
 }
 
 .team-article{
@@ -198,7 +198,9 @@ width: 80%;
 .redes-item a {
   display: inline-block;
 }
-
+.utec{
+  margin-bottom: 74px;
+}
 #team{
   margin-top: 1em;
   width: auto;
@@ -436,8 +438,13 @@ width: 80%;
     background-position-x: 0px;
   }
   #team-profile-6{
+    background-size: 289px;
+  }
+
+  #team-profile-7{
     background-size: 520px;
   }
+
   #presentation h1{
     text-align: center;
   }
