@@ -48,7 +48,7 @@
         <section id="introduction">
           <div class="about-container">
             <div class="about-line">
-            <div class="about-text lazy" id="about-ted" data-src="images/ted-logo.png">
+            <div class="about-text" id="about-ted" style="background-image: url(images/ted-logo.png)">
             </div>
           <div class="about-text">
           <p class="tedx-description">TED (Tecnología, Entretenimiento y Diseño), es un evento anual donde algunos de los pensadores y emprendedores más grandes del mundo son invitados a exponer que es lo que más les apsiona.</p>
@@ -61,7 +61,7 @@
           <p>TEDx se trata de un conjunto de charlas locales, organizadas de forma independiente y voluntaría que permiten disfrutar en diferentes paises del mundo de una experiencia similar a las conferencias TED (<a target="_blank" href="https://www.ted.com/about/programs-initiatives/tedx-program">ver más</a>).</p>
           <br>
         </div>
-        <div class="about-text lazy" id="about-tedx" data-src="images/tedx-logo.jpg"></div>
+        <div class="about-text" id="about-tedx" style="background-image: url(images/tedx-logo.jpg)"></div>
       </div>
       </div>
           <h2>O mejor aún:</h2>
@@ -99,15 +99,22 @@
 
         <header style="margin-bottom:80px;">
           <h2 class="text-center">Colabora:</h2>
-          <tedx-sponsor v-bind:sponsor="sponsors[0]"></tedx-sponsor>
+          <div class="sponsors-line cool-efect-for-lines">
+            <tedx-sponsor v-bind:sponsor="sponsors[0]"></tedx-sponsor>
+          </div>
         </header>
         <header style="margin-bottom:80px;">
           <h2 class="text-center">Nuestros Sponsors:</h2>
         </header>
+          <div class="sponsors-line cool-efect-for-lines">
             <tedx-sponsor v-bind:sponsor="sponsors[1]"></tedx-sponsor>
             <tedx-sponsor v-bind:sponsor="sponsors[2]"></tedx-sponsor>
-            <tedx-sponsor v-bind:sponsor="sponsors[3]"></tedx-sponsor>
+            <tedx-sponsor v-bind:sponsor="sponsors[3]" class="uetc"></tedx-sponsor>
+          </div>
+          <div class="sponsors-line cool-efect-for-lines">
             <tedx-sponsor v-bind:sponsor="sponsors[4]"></tedx-sponsor>
+            <tedx-sponsor v-bind:sponsor="sponsors[5]"></tedx-sponsor>
+          </div>
           </div>
       </section>
     <br>
@@ -131,6 +138,11 @@
             <team-member v-bind:member="teamMembers[5]"></team-member>
         </div>
         </div>
+        <div class="team-line cool-efect-for-lines">
+          <div class="team-couple">
+            <team-member v-bind:member="teamMembers[6]"></team-member>
+        </div>
+        </div>
   </div>
 </div>
 </div>
@@ -145,16 +157,16 @@
       <div class="redes-line">
       <div class="redes-item">
         <a target="_blank" href="https://www.facebook.com/TEDxSanJosedeMayo/" class="" >
-          <img data-src="images/social/facebook.png" class="lazy hvr-border-fade" alt="FB">
+          <img src="images/social/facebook.png" class="hvr-border-fade" alt="FB">
         </a>
       </div>
       <div class="redes-item">
         <a target="_blank" href="https://twitter.com/TEDxSJdeM" class="" >
-          <img data-src="images/social/twitter.png" class="lazy hvr-border-fade" alt="@TEDxSJdeM">
+          <img src="images/social/twitter.png" class="hvr-border-fade" alt="@TEDxSJdeM">
         </a>
       </div><div class="redes-item">
         <a target="_blank" href="https://www.instagram.com/tedxsanjosedemayo/" class="" >
-          <img data-src="images/social/instagram.png" class="lazy hvr-border-fade" alt="@tedxsanjosedemayo">
+          <img src="images/social/instagram.png" class="hvr-border-fade" alt="@tedxsanjosedemayo">
         </a>
       </div>
       </div>
@@ -164,15 +176,8 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- jquery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
-    <!-- jquery lazy-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.7/jquery.lazy.min.js"></script>
-    </script>
     <!-- Index js -->
     <script type="text/javascript" src="js/index.js"></script>
-
-    <script type="text/javascript">
-    $(()=> $('.lazy').lazy());
-    </script> -->
     <!-- jquery is on viewport -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
     <script type="text/javascript">
