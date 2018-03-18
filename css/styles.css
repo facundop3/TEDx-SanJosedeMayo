@@ -226,13 +226,16 @@ width: 80%;
   background-position-x: 10px;
 }
 #profile-5{
-    background-size: 490px;
+  background-size: 366px;
+  background-position-x: 9px;
 }
 #profile-6{
-    background-size: 490px;
+  background-size: 396px;
+  background-position-x: 3px;
 }
 #profile-7{
-    background-size: 490px;
+  background-size: 400px;
+  background-position-x: 6px;
 }
 
 #team-profile-1{

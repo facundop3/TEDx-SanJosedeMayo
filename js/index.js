@@ -29,7 +29,7 @@ $('document').ready(function(){
 
 Vue.component('tedx-speaker',{
   props: ['speaker'],
-  template:`<article class="speaker-article" v-if="speaker.name != 'no image'">
+  template:`<article class="speaker-article" v-if="speaker.show">
               <div class="hvr-border-fade profile-image" :id="speaker.profileId" v-bind:style="{'background-image': 'url('+ speaker.imageUrl +')'}"></div><br>
               <!--<h5>{{speaker.name}}</h5>
               <footer>
@@ -53,11 +53,13 @@ var app = new Vue({
   el: '#app1',
   data: {
     speakers: [
-      {name: 'Agustín Zubiaga' , personalSummary:'Hola hola hola ! Here goes your personal summary..', talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/agustin.jpeg', profileId:'profile-1'},
-      {name: 'Carmen Corrales' , personalSummary:'Hola hola hola ! Here goes your personal summary..', talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/carmen.jpg', profileId:'profile-2'},
-      {name: 'Eduardo Bauzá' , personalSummary:'Hola hola hola ! Here goes your personal summary..', talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/eduardo.jpeg', profileId:'profile-3'},
-      {name: 'Gonzalo Centurión' , personalSummary:'Hola hola hola ! Here goes your personal summary..', talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/gonzalo.jpeg', profileId:'profile-4'},
-      {name: 'no image' , personalSummary:'Hola hola hola ! Here goes your personal summary..', talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/anonymouse/who.jpeg', profileId:''},
+      {name: 'Agustín Zubiaga' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/agustin.jpeg', profileId:'profile-1'},
+      {name: 'Carmen Corrales' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/carmen.jpg', profileId:'profile-2'},
+      {name: 'Eduardo Bauzá' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/eduardo.jpeg', profileId:'profile-3'},
+      {name: 'Gonzalo Centurión' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/gonzalo.jpeg', profileId:'profile-4'},
+      {name: 'Ana de los Santos' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/ana.jpeg', profileId:'profile-5'},
+      {name: 'Pedro Peña' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/pedro.jpeg', profileId:'profile-6'},
+      {name: 'Matias Laca' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/matias.jpeg', profileId:'profile-7'}
     ],
   }
 })
