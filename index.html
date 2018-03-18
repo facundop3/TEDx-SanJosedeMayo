@@ -80,16 +80,16 @@
         <br>
         <div class="speakers-line cool-efect-for-lines">
           <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
-          <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
-          <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
+          <tedx-speaker v-bind:speaker="speakers[1]"></tedx-speaker>
+          <tedx-speaker v-bind:speaker="speakers[2]"></tedx-speaker>
         </div>
         <div class="speakers-line cool-efect-for-lines">
-          <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
-          <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
-          <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
+          <tedx-speaker v-bind:speaker="speakers[3]"></tedx-speaker>
+          <tedx-speaker v-bind:speaker="speakers[4]"></tedx-speaker>
+          <tedx-speaker v-bind:speaker="speakers[4]"></tedx-speaker>
         </div>
         <div class="speakers-line cool-efect-for-lines">
-          <tedx-speaker v-bind:speaker="speakers[0]"></tedx-speaker>
+          <tedx-speaker v-bind:speaker="speakers[4]"></tedx-speaker>
         </div>
       <br>
     </div>
@@ -98,7 +98,7 @@
         <div id="app2">
 
         <header style="margin-bottom:80px;">
-          <h2 class="text-center">Colabora:</h2>
+          <!-- <h2 class="text-center">Colabora:</h2> -->
           <div class="sponsors-line cool-efect-for-lines">
             <tedx-sponsor v-bind:sponsor="sponsors[0]"></tedx-sponsor>
           </div>
@@ -109,11 +109,19 @@
           <div class="sponsors-line cool-efect-for-lines">
             <tedx-sponsor v-bind:sponsor="sponsors[1]"></tedx-sponsor>
             <tedx-sponsor v-bind:sponsor="sponsors[2]"></tedx-sponsor>
-            <tedx-sponsor v-bind:sponsor="sponsors[3]" class="uetc"></tedx-sponsor>
+            <tedx-sponsor v-bind:sponsor="sponsors[3]"></tedx-sponsor>
           </div>
-          <div class="sponsors-line cool-efect-for-lines">
+          <div class="sponsors-line cool-efect-for-lines" id="last-sponsors">
             <tedx-sponsor v-bind:sponsor="sponsors[4]"></tedx-sponsor>
             <tedx-sponsor v-bind:sponsor="sponsors[5]"></tedx-sponsor>
+          </div>
+          <header style="margin-bottom:80px;">
+            <h2 class="text-center">Colaboran:</h2>
+          </header>
+          <div class="sponsors-line cool-efect-for-lines">
+            <tedx-sponsor v-bind:sponsor="sponsors[6]"></tedx-sponsor>
+            <tedx-sponsor v-bind:sponsor="sponsors[7]"></tedx-sponsor>
+            <tedx-sponsor v-bind:sponsor="sponsors[8]"></tedx-sponsor>
           </div>
           </div>
       </section>
@@ -133,13 +141,9 @@
         </div>
         <div class="team-line cool-efect-for-lines">
           <div class="team-couple">
-            <team-member v-bind:member="teamMembers[3]"></team-member>
+            <!-- <team-member v-bind:member="teamMembers[3]"></team-member> -->
             <team-member v-bind:member="teamMembers[4]"></team-member>
             <team-member v-bind:member="teamMembers[5]"></team-member>
-        </div>
-        </div>
-        <div class="team-line cool-efect-for-lines">
-          <div class="team-couple">
             <team-member v-bind:member="teamMembers[6]"></team-member>
         </div>
         </div>
