@@ -33,10 +33,11 @@ p{
 }
 .main-image{
   width: 100%;
-  height: 666px;
-  background-image: url(../images/tedx.jpg);
-  background-size: 1485px;
+  height: 770px;
+  background-image: url(../images/TEDXWeb.jpg);
+  background-size: 100%;
   background-position: center center ;
+  background-repeat: no-repeat;
 
 }
 .main-image img{
@@ -77,11 +78,13 @@ p{
   margin: auto;
 }
 .profile-image{
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   background-position: center center ;
   border-radius: 50%;
   margin: 5px;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 .team-profile-image{
   width: 300px;
@@ -96,7 +99,7 @@ p{
 }
 .speaker-article{
   display: inline-block;
-  width: 300px;
+  width: 345px;
   height: auto;
   margin: 35px;
 }
@@ -183,9 +186,7 @@ width: 80%;
   display: flex;
   justify-content: center;
   max-height: 57px;
-  position: absolute;
-  top: 65%;
-  left: 20%;
+  position: inherit;
 }
 .social-line a {
   width: 33px;
@@ -209,16 +210,20 @@ width: 80%;
   margin: auto;
 }
 #profile-1{
-    background-size: 490px;
+  background-size: 425px;
+  background-position-x: -2px;
 }
 #profile-2{
-    background-size: 490px;
+  background-size: 411px;
+  background-position-x: 3px;
 }
 #profile-3{
-    background-size: 490px;
+  background-size: 360px;
+  background-position-x: 12px;
 }
 #profile-4{
-    background-size: 490px;
+  background-size: 360px;
+  background-position-x: 10px;
 }
 #profile-5{
     background-size: 490px;
@@ -250,7 +255,10 @@ width: 80%;
   background-color: black;
 }
 #team-profile-6{
-    background-size: 520px;
+  background-size: 295px;
+}
+#team-profile-7{
+  background-size: 521px;
 }
 #contact{
     margin-top: 40px;
@@ -285,6 +293,7 @@ width: 80%;
   background-size: 390px;
   background-repeat: no-repeat;
 }
+
 .hidden{
      opacity:0;
 }
@@ -327,6 +336,7 @@ width: 80%;
   }
   footer h6{
     font-size: 30px;
+    position: relative;
   }
   #presentation{
   margin-top: 60px;
@@ -355,9 +365,9 @@ width: 80%;
     display: unset;
   }
   .profile-image{
-    width: 320px;
-    height: 320px;
-    border-radius: 170px;
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
   }
   .nav-header-bar{
     font-size: 24px;
@@ -389,6 +399,7 @@ width: 80%;
   }
   .social-line  {
     left: 17%;
+    display: none;
   }
   .social-line a {
     width: 50px;
@@ -399,19 +410,19 @@ width: 80%;
     width: 430px;
   }
   #profile-1{
-    background-size: 257px;
+    background-size: 450px;
   }
   #profile-2{
-    background-size: 257px;
+    background-size: 450px;
   }
   #profile-3{
-    background-size: 257px;
+    background-size: 450px;
   }
   #profile-4{
-    background-size: 257px;
+    background-size: 450px;
   }
   #profile-5{
-    background-size: 257px;
+    background-size: 450px;
   }
   #profile-6{
     background-size: 502px;
@@ -432,7 +443,6 @@ width: 80%;
     background-size: 310px;
     background-position-x: 0px;
   }
-  }
   #team-profile-5{
     background-size: 310px;
     background-position-x: 0px;
@@ -448,25 +458,6 @@ width: 80%;
   #presentation h1{
     text-align: center;
   }
-  #profile-1{
-    background-size: 470px;
-  }
-  #profile-2{
-    background-size: 470px;
-  }
-  #profile-3{
-    background-size: 470px;
-  }
-  #profile-4{
-    background-size: 470px;
-  }
-  #profile-5{
-    background-size: 470px;
-  }
-  #profile-6{
-    background-size: 470px;
-
-}
 }
 
 
