@@ -98,7 +98,32 @@
         <div id="app2">
 
         <header style="margin-bottom:80px;">
-          <!-- <h2 class="text-center">Colabora:</h2> -->
+          <h2 class="text-center">Evento declarado de interés departamental</h2>
+          <br>
+          <div class="sponsors-line cool-efect-for-lines">
+            <button id="eventbrite-widget-modal-trigger-44344740312" type="button" class="tk-button">¡Consigue tu entrada!</button>
+          </div>
+          <!-- Noscript content for added SEO -->
+          <noscript><a href="https://www.eventbrite.com/e/tedxsanjosedemayo-tickets-44344740312" rel="noopener noreferrer" target="_blank"></noscript>
+          <!-- You can customize this button any way you like -->
+          <noscript></a>Buy Tickets on Eventbrite</noscript>
+
+          <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+          <script type="text/javascript">
+              var exampleCallback = function() {
+                  console.log('Order complete!');
+              };
+
+              window.EBWidgets.createWidget({
+                  widgetType: 'checkout',
+                  eventId: '44344740312',
+                  modal: true,
+                  modalTriggerElementId: 'eventbrite-widget-modal-trigger-44344740312',
+                  onOrderComplete: exampleCallback
+              });
+          </script>
+          <br>
           <div class="sponsors-line cool-efect-for-lines">
             <tedx-sponsor v-bind:sponsor="sponsors[0]"></tedx-sponsor>
           </div>
