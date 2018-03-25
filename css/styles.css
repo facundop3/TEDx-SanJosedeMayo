@@ -34,7 +34,7 @@ p{
 }
 .main-image{
   width: 100%;
-  height: 685px;
+  height: 802px;
   background-image: url(../images/TEDXWeb.jpg);
   background-size: 100%;
   background-position: center center ;
@@ -464,6 +464,11 @@ width: 80%;
 
   #presentation h1{
     text-align: center;
+  }
+}
+@media screen and (max-width: 1180px){
+  .main-image{
+    height: 549px;
   }
 }
 
