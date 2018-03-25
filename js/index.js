@@ -58,7 +58,7 @@ var app = new Vue({
       {name: 'Eduardo Bauzá' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/eduardo.jpeg', profileId:'profile-3'},
       {name: 'Gonzalo Centurión' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/gonzalo.jpeg', profileId:'profile-4'},
       {name: 'Ana de los Santos' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/ana.jpeg', profileId:'profile-5'},
-      {name: 'Pedro Peña' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/pedro.jpeg', profileId:'profile-6'},
+      {name: 'Pedro Peña' , show:true, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/pedro.jpeg', profileId:'profile-6'},
       {name: 'Matias Laca' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/matias.jpeg', profileId:'profile-7'}
     ],
   }
