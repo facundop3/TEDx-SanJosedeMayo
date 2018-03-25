@@ -466,6 +466,11 @@ width: 80%;
     text-align: center;
   }
 }
+@media screen and (max-width: 1180px){
+  .main-image{
+    height: 549px;
+  }
+}
 
 
 /*External CSS*/
