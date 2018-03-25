@@ -2,6 +2,7 @@
   /*border: 1px solid red;*/
   margin: 0;
   font-family: 'Lato', sans-serif;
+  text-decoration: none;
 }
 a{
   color: #000;
@@ -33,7 +34,7 @@ p{
 }
 .main-image{
   width: 100%;
-  height: 770px;
+  height: 685px;
   background-image: url(../images/TEDXWeb.jpg);
   background-size: 100%;
   background-position: center center ;
@@ -322,7 +323,7 @@ width: 80%;
   margin-bottom: 25px;
 }
 
-@media screen and (max-width: 1447px){
+@media screen and (max-width: 1349px){
   section p {
     font-size: 21px;
   }
@@ -353,8 +354,8 @@ width: 80%;
     top: 0;
   }
   .main-image{
-    background-size: 1276px;
-    height: 625px;
+    background-size: 100%;
+    height: 610px;
   }
   .team-article{
     /*max-width: 350px;*/
@@ -411,6 +412,9 @@ width: 80%;
   }
   .about-text{
     width: 430px;
+  }
+  .sponsor-image img {
+    max-width: 220px;
   }
   #profile-1{
     background-size: 450px;
@@ -551,5 +555,8 @@ width: 80%;
   color: rgb(255, 255, 255);
   font-weight: 600;
   margin: auto;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 25px;
 }
 /*ENTRADAS*/
