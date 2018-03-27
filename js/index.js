@@ -57,7 +57,7 @@ var app = new Vue({
       {name: 'Carmen Corrales' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/carmen.jpg', profileId:'profile-2'},
       {name: 'Eduardo Bauzá' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/eduardo.jpeg', profileId:'profile-3'},
       {name: 'Gonzalo Centurión' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/gonzalo.jpeg', profileId:'profile-4'},
-      {name: 'Ana de los Santos' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/ana.jpeg', profileId:'profile-5'},
+      {name: 'Ana de los Santos' , show:true, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/ana.jpeg', profileId:'profile-5'},
       {name: 'Pedro Peña' , show:true, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/pedro.jpeg', profileId:'profile-6'},
       {name: 'Matias Laca' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/matias.jpeg', profileId:'profile-7'}
     ],
@@ -90,7 +90,8 @@ var app = new Vue({
       {name: 'Matías Laca' , personalSummary:'Hola hola hola ! Here goes your personal summary..', fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/team/matias.jpeg', teamId:'team-profile-4'},
       {name: 'Gonzalo Prado' , personalSummary:'STAND UP', fbUrl:'https://www.fb.com/gonzaloprado8/' ,twUrl:'',inUrl:'https://www.instagram.com/gonzaloprado8/', lnUrl:'',ghUrl:'', imageUrl:'images/team/gonzalo.jpeg', teamId:'team-profile-5'},
       {name: 'Paola Alcorta' , personalSummary:'Fotografía Músicos 🎶 Teatro 🎭 Danza 💃 Espectáculos en gral 🎬🎤🎨👏', fbUrl:'https://www.facebook.com/paoliita.alcorta' ,twUrl:'',inUrl:'https://www.instagram.com/paoalcortafotografia/', lnUrl:'',ghUrl:'', imageUrl:'images/team/paola.jpeg', teamId:'team-profile-6'},
-      {name: 'Facundo Petre' , personalSummary:'A curious guy that haves fun researching how things works...', fbUrl:'' ,twUrl:'',inUrl:'https://www.instagram.com/facup3/', lnUrl:'https://www.linkedin.com/in/facundopetre/',ghUrl:'https://github.com/facundop3', imageUrl:'images/team/facundo.jpg', teamId:'team-profile-7'}
+      {name: 'Facundo Petre' , personalSummary:'A curious guy that haves fun researching how things works...', fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'https://www.linkedin.com/in/facundopetre/',ghUrl:'https://github.com/facundop3', imageUrl:'images/team/facundo.jpg', teamId:'team-profile-7'},
+      {name: 'Héctor Cotelo' , personalSummary:'A curious guy that haves fun researching how things works...', fbUrl:'https://www.facebook.com/hcotelo' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/team/hector.jpeg', teamId:'team-profile-8'}
     ]
   }
 })
