@@ -77,6 +77,7 @@ var app = new Vue({
       {cssClass:'',name:'Hotel Centro San José', imgUrl:'images/sponsors/hotel-centro.png', webUrl:'http://www.hcentro.com/'},
       {cssClass:'',name:'Choco Artesanal', imgUrl:'images/sponsors/choco-artesanal.jpg', webUrl:'https://www.facebook.com/ChocoArtesanalsj/'},
       {cssClass:'',name:'En Frecuencia', imgUrl:'images/sponsors/en-frecuencia.jpeg', webUrl:'http://www.enfrecuencia.com.uy/'},
+      {cssClass:'',name:'Kroser', imgUrl:'images/sponsors/kroser.jpeg', webUrl:'http://www.kroser.com.uy/'},
     ]
   }
 })
