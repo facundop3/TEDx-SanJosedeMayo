@@ -55,7 +55,7 @@ var app = new Vue({
     speakers: [
       {name: 'Agustín Zubiaga' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/agustin.jpeg', profileId:'profile-1'},
       {name: 'Carmen Corrales' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/carmen.jpg', profileId:'profile-2'},
-      {name: 'Eduardo Bauzá' , show:false, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/eduardo.jpeg', profileId:'profile-3'},
+      {name: 'Eduardo Bauzá' , show:true, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/eduardo.jpeg', profileId:'profile-3'},
       {name: 'Gonzalo Centurión' , show:true, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/gonzalo.jpeg', profileId:'profile-4'},
       {name: 'Ana de los Santos' , show:true, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/ana.jpeg', profileId:'profile-5'},
       {name: 'Pedro Peña' , show:true, talkTitle: 'Redoble de tambores',fbUrl:'' ,twUrl:'',inUrl:'', lnUrl:'',ghUrl:'', imageUrl:'images/speakers/pedro.jpeg', profileId:'profile-6'},
