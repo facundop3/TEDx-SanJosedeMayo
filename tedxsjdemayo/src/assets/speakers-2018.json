@@ -1,0 +1,94 @@
+{
+  "speakers": [
+    {
+      "name":"Carmen Corrales",
+      "id": 1,
+      "image":"carmen.jpg",
+      "video-url":"https://www.youtube.com/watch?v=KTVz-gBokrc",
+      "talk-title":"Quien canta sus males espanta... \n Animate... cantemos",
+      "social": {
+                  "facebook": "",
+                  "twitter": "",
+                  "linkedin":"",
+                  "github":"",
+                  "instagram":"",
+                  "website":""
+                }
+    },
+    {
+      "name":"Eduardo Bauzá",
+      "id": 2,
+      "image":"./assets/images/speakers/eduardo.jpeg",
+      "video-url":"https://www.youtube.com/watch?v=CjUxdk0Tgvk",
+      "talk-title":"¿Por qué soy ecologista?",
+      "social": {
+                  "facebook": "",
+                  "twitter": "",
+                  "linkedin":"",
+                  "github":"",
+                  "instagram":"",
+                  "website":""
+                }
+    },
+    {
+      "name":"Gonzalo Centurión",
+      "id": 3,
+      "image":"./assets/images/speakers/gonzalo.jpeg",
+      "video-url":"https://www.youtube.com/watch?v=D64BYErIKUA",
+      "talk-title":"3 horas en 18 minutos",
+      "social": {
+                  "facebook": "",
+                  "twitter": "",
+                  "linkedin":"",
+                  "github":"",
+                  "instagram":"",
+                  "website":""
+                }
+    },
+    {
+      "name":"Ana de los Santos",
+      "id": 4,
+      "image":"",
+      "video-url":"https://www.youtube.com/watch?v=UnGZxzl6Zek",
+      "talk-title":"Compartir la vida donando sangre",
+      "social": {
+                  "facebook": "",
+                  "twitter": "",
+                  "linkedin":"",
+                  "github":"",
+                  "instagram":"",
+                  "website":""
+                }
+    },
+    {
+      "name":"Pedro Peña",
+      "id": 5,
+      "image":"",
+      "video-url":"https://www.youtube.com/watch?v=bkAVJAKaKyY",
+      "talk-title":"Los límites de tu lenguaje",
+      "social": {
+                  "facebook": "",
+                  "twitter": "",
+                  "linkedin":"",
+                  "github":"",
+                  "instagram":"",
+                  "website":""
+                }
+    },
+    {
+      "name":"Matias Laca",
+      "id": 6,
+      "image":"",
+      "video-url":"https://www.youtube.com/watch?v=iVZOAq4OO-U",
+      "talk-title":"Aprende seducción y mejora tu calidad de vida",
+      "social": {
+                  "facebook": "",
+                  "twitter": "",
+                  "linkedin":"",
+                  "github":"",
+                  "instagram":"https://www.instagram.com/matiaslacauy/",
+                  "website":""
+                }
+    }
+  ]
+}
