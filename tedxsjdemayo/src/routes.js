@@ -3,7 +3,8 @@ import SpeakerDetail from '@/components/Tedx-speaker-detail.vue'
 
 const routes = [
   {path:'/' , component: TedxMain},
-  {path:'/speaker' , component: SpeakerDetail}
+  // {path:'/speaker' ,name:'speaker', component: SpeakerDetail, props: true}
+  { path: '/speaker/:id', name:'speaker',component: SpeakerDetail }
 ]
 
 export default routes

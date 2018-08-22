@@ -4,8 +4,8 @@
               <v-layout>
                 <v-flex xs5>
                   <v-card-media
-                    :src= currentImage
-                    height="125px"
+                    :src="images[speaker.id]"
+                    height="135px"
                     contain
                   ></v-card-media>
                 </v-flex>
@@ -30,24 +30,26 @@ export default {
     return {
       tile: false,
       avatarSize: 256,
-      images: [
-        require('@/assets/images/speakers/carmen.jpg'),
-        require('@/assets/images/speakers/eduardo.jpeg'),
-        require('@/assets/images/speakers/gonzalo.jpeg')
-      ],
-      currentImage:''
+      images: {
+          "1" : require('@/assets/images/speakers/carmen.jpg'),
+          "2": require('@/assets/images/speakers/eduardo.jpeg'),
+          "3": require('@/assets/images/speakers/gonzalo.jpeg'),
+          "4": '',
+          "5": '',
+          "6": ''
+      },
     }
   },
   methods:{
     showSpeaker(){
-      this.$router.push('/speaker')
-    }
+      this.$router.push({name:'speaker', params:{id: 2}})
+    },
   },
-  created(){
-    this.currentImage = this.images.filter(url => url.endsWith(this.speaker.image))[0]
-    console.log(this.currentImage)
-  },
-  props:['speaker']
+  props:['speaker'],
+  mounted(){
+    console.log('HEY')
+    console.log(this.$route.params)
+  }
 }
 </script>
 <style scoped>

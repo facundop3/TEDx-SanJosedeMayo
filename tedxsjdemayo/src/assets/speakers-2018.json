@@ -3,7 +3,7 @@
     {
       "name":"Carmen Corrales",
       "id": 1,
-      "image":"carmen.jpg",
+      "image":"@/assets/images/speakers/carmen.jpg",
       "video-url":"https://www.youtube.com/watch?v=KTVz-gBokrc",
       "talk-title":"Quien canta sus males espanta... \n Animate... cantemos",
       "social": {
@@ -18,7 +18,7 @@
     {
       "name":"Eduardo Bauzá",
       "id": 2,
-      "image":"./assets/images/speakers/eduardo.jpeg",
+      "image":"@/assets/images/speakers/eduardo.jpeg",
       "video-url":"https://www.youtube.com/watch?v=CjUxdk0Tgvk",
       "talk-title":"¿Por qué soy ecologista?",
       "social": {
@@ -33,7 +33,7 @@
     {
       "name":"Gonzalo Centurión",
       "id": 3,
-      "image":"./assets/images/speakers/gonzalo.jpeg",
+      "image":"@/assets/images/speakers/gonzalo.jpeg",
       "video-url":"https://www.youtube.com/watch?v=D64BYErIKUA",
       "talk-title":"3 horas en 18 minutos",
       "social": {

@@ -11,40 +11,15 @@
             >
               <v-layout row wrap>
                 <v-flex
-                  v-for="card in cards"
-                  v-bind="{ [`xs${card.flex}`]: true }"
-                  :key="card.title"
+                  xs12
                 >
                   <v-card>
                     <v-card-media
-                      :src="card.src"
-                      height="200px"
+                      height="315px"
+                      width="560px"
                     >
-                      <v-container
-                        fill-height
-                        fluid
-                        pa-2
-                      >
-                        <v-layout fill-height>
-                          <v-flex xs12 align-end flexbox>
-                            <span class="headline white--text" v-text="card.title"></span>
-                          </v-flex>
-                        </v-layout>
-                      </v-container>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KTVz-gBokrc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </v-card-media>
-
-                    <v-card-actions>
-                      <v-spacer></v-spacer>
-                      <v-btn icon>
-                        <v-icon>favorite</v-icon>
-                      </v-btn>
-                      <v-btn icon>
-                        <v-icon>bookmark</v-icon>
-                      </v-btn>
-                      <v-btn icon>
-                        <v-icon>share</v-icon>
-                      </v-btn>
-                    </v-card-actions>
                   </v-card>
                 </v-flex>
               </v-layout>
@@ -67,9 +42,6 @@ export default {
     TedxFooter
   },
   data: () => ({
-      cards: [
-        { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 6 }
-      ]
     })
 }
 </script>
