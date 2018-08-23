@@ -12,7 +12,7 @@
                 <v-flex xs7>
                   <v-card-title primary-title>
                     <div>
-                      <div class="headline"><a @click="showSpeaker">{{speaker.name}}</a></div>
+                      <div class="headline"><a @click="showSpeaker(speaker.id)">{{speaker.name}}</a></div>
                       <div>{{speaker['talk-title']}}</div>
                       <div>(2018)</div>
                     </div>
@@ -41,15 +41,11 @@ export default {
     }
   },
   methods:{
-    showSpeaker(){
-      this.$router.push({name:'speaker', params:{id: 2}})
+    showSpeaker(id){
+      this.$router.push({name:'speaker', params:{id}})
     },
   },
-  props:['speaker'],
-  mounted(){
-    console.log('HEY')
-    console.log(this.$route.params)
-  }
+  props:['speaker']
 }
 </script>
 <style scoped>

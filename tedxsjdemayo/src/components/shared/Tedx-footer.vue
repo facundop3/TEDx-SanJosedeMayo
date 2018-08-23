@@ -24,8 +24,8 @@
 
       <v-divider></v-divider>
 
-      <v-card-text class="white--text" >
-        &copy;2018 — <strong><a href="https://twitter.com/facup3">〈code〉with ❤️</a></strong>
+      <v-card-text class="white--text black">
+        &copy;2018 — <strong><a href="https://www.linkedin.com/in/facundopetre/" class="blue--text">〈code〉with ❤️ by @facup3</a></strong>
       </v-card-text>
     </v-card>
   </v-footer>
@@ -38,7 +38,7 @@
       {'icon':'fab fa-facebook', 'url':'https://www.facebook.com/TEDxSanJosedeMayo/'},
       {'icon':'fab fa-twitter', 'url':'https://twitter.com/TEDxSJdeM'},
       {'icon':'fab fa-instagram', 'url':'https://www.instagram.com/tedxsanjosedemayo/'}
-    ]
+    ],
   })
   }
 </script>

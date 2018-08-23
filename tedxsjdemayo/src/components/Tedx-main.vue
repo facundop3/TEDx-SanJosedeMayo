@@ -1,8 +1,8 @@
 <template>
 
   <div>
-    <tedx-header></tedx-header>
-    <tedx-carousel></tedx-carousel>
+    <tedx-header/>
+    <tedx-carousel/>
     <v-container fluid>
     <v-container>
       <v-layout row wrap>
@@ -31,7 +31,7 @@ import TedxHeader from './shared/Tedx-header.vue'
 import TedxFooter from './shared/Tedx-footer.vue'
 import TedxSpeaker from './Tedx-speaker.vue'
 import TedxCarousel from '@/components/Tedx-carousel.vue'
-import SpeakersData from '@/assets/speakers-2018.json'
+import speakersData from '@/assets/speakers-2018.json'
 
 export default {
   name: 'HelloWorld',
@@ -44,8 +44,11 @@ export default {
   },
   data(){
     return {
-      speakers: SpeakersData.speakers
+      speakers: speakersData.speakers
     }
+  },
+  mounted(){
+    console.log(this.speakers)
   }
 }
 </script>
