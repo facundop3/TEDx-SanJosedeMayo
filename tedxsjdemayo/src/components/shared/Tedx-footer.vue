@@ -9,7 +9,7 @@
       <v-card-text >
         <v-btn
           v-for="myIcon in iconsList"
-          :key="myIcon"
+          :key="myIcon.id"
           class="mx-3 white--text"
           icon>
           <a :href="myIcon.url" target="_blank">
@@ -35,9 +35,9 @@
   export default {
      data: () => ({
     iconsList: [
-      {'icon':'fab fa-facebook', 'url':'https://www.facebook.com/TEDxSanJosedeMayo/'},
-      {'icon':'fab fa-twitter', 'url':'https://twitter.com/TEDxSJdeM'},
-      {'icon':'fab fa-instagram', 'url':'https://www.instagram.com/tedxsanjosedemayo/'}
+      {'icon':'fab fa-facebook', 'url':'https://www.facebook.com/TEDxSanJosedeMayo/', 'id':'icon-facebook'},
+      {'icon':'fab fa-twitter', 'url':'https://twitter.com/TEDxSJdeM', 'id':'icon-twitter'},
+      {'icon':'fab fa-instagram', 'url':'https://www.instagram.com/tedxsanjosedemayo/', 'id':'icon-instagram'}
     ],
   })
   }

@@ -6,7 +6,10 @@
     <v-container fluid>
     <v-container>
       <v-layout row wrap>
-          <tedx-speaker v-for="speaker of speakers" :key="speaker.id" v-bind:speaker="speaker"></tedx-speaker>
+      <tedex-speaker-detail v-for="speaker of speakers" :key="speaker.id" :speaker="speaker"></tedex-speaker-detail>
+      </v-layout>
+      <v-layout row wrap>
+        <tedx-sponsor :sponsor="{img:'https://tedxsanjosedemayo.org/images/sponsors/marcre.png'}"/>
       </v-layout>
     </v-container>
       <v-slide-y-transition mode="out-in">
@@ -29,26 +32,24 @@
 <script>
 import TedxHeader from './shared/Tedx-header.vue'
 import TedxFooter from './shared/Tedx-footer.vue'
-import TedxSpeaker from './Tedx-speaker.vue'
 import TedxCarousel from '@/components/Tedx-carousel.vue'
 import speakersData from '@/assets/speakers-2018.json'
+import TedexSpeakerDetail from '@/components/Tedx-speaker-detail.vue'
+import TedexSponsor from '@/components/sponsor/Tedx-sponsor.vue'
 
 export default {
-  name: 'HelloWorld',
   components: {
     TedxHeader,
     TedxFooter,
-    TedxSpeaker,
-    TedxCarousel
+    TedxCarousel,
+    TedexSpeakerDetail,
+    TedexSponsor
 
   },
   data(){
     return {
       speakers: speakersData.speakers
     }
-  },
-  mounted(){
-    console.log(this.speakers)
   }
 }
 </script>

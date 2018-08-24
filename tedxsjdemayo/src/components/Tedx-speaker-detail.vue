@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <tedx-header></tedx-header>
-      <v-layout>
-        <v-flex xs10 sm4>
+        <v-flex xs6 sm6>
           <v-card>
             <v-container
               fluid
@@ -17,55 +14,45 @@
                       height="315px"
                       width="560px"
                     >
-                        <iframe width="100%" height="100%" :src="currentSpeaker.videoUrl" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" :src="speaker.videoUrl" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </v-card-media>
                     <v-card-title primary-title>
                       <div>
-                        <h3 class="headline mb-0">{{currentSpeaker.name}}</h3>
-                        <div>{{currentSpeaker.summary}}</div>
+                        <h3 class="headline mb-0">{{speaker.name}}</h3>
+                        <div>{{speaker.summary}}</div>
                       </div>
                     </v-card-title>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                        <v-btn icon v-for="social of socials" :key="social" v-if="social.url">
+                      <a  :href="social.url" target="_blanck">
+                          <v-icon>{{social.icon}}</v-icon>
+                      </a>
+                        </v-btn>
+                  </v-card-actions>
                   </v-card>
                 </v-flex>
               </v-layout>
             </v-container>
           </v-card>
         </v-flex>
-      </v-layout>
-    <tedx-footer></tedx-footer>
-  </div>
 </template>
 <script>
-
-import TedxHeader from './shared/Tedx-header.vue'
-import TedxFooter from './shared/Tedx-footer.vue'
-import speakersData from '@/assets/speakers-2018.json'
-
-
 export default {
 
-  components: {
-    TedxHeader,
-    TedxFooter
-  },
   data(){
     return {
-          currentSpeaker: speakersData.speakers
+      socials: this.$props.speaker.social,
       } 
   },
-  created: function (){
-    console.log(this.currentSpeaker)
-  },
+    props: ['speaker'],
     mounted(){
-      console.log(this.$route.params.id)
-      console.log(this.currentSpeaker)
-      const currentId = this.$route.params.id
-      this.currentSpeaker = this.currentSpeaker.filter(function (speaker) { return speaker.id == currentId})[0]
-      console.log(this.currentSpeaker.name)
-
     }
 }
 </script>
 <style scoped>
-
+a{
+  text-decoration: none;
+  color: red;
+}
 </style>
