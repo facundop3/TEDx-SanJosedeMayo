@@ -1,5 +1,5 @@
 <template>
-        <v-flex xs6 sm6>
+        <v-flex xs12 sm6>
           <v-card>
             <v-container
               fluid

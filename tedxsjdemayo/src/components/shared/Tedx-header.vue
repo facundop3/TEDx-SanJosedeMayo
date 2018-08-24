@@ -1,6 +1,6 @@
 <template>
     <v-toolbar dark color="red darken-1"  class="white--text">
-    <v-toolbar-title>Tedx San José de Mayo</v-toolbar-title>
+    <v-toolbar-title>TEDx San José de Mayo</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="white--text">
       <v-btn flat @click="backHome">Inicio</v-btn>
