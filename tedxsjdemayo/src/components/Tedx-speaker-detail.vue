@@ -14,7 +14,7 @@
                       height="315px"
                       width="560px"
                     >
-                        <iframe width="100%" height="100%" :src="speaker.videoUrl" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <!-- <iframe width="100%" height="100%" :src="speaker.videoUrl" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
                     </v-card-media>
                     <v-card-title primary-title>
                       <div>

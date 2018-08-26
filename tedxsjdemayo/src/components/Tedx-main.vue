@@ -8,9 +8,13 @@
       <v-layout row wrap>
       <tedex-speaker-detail v-for="speaker of speakers" :key="speaker.id" :speaker="speaker"></tedex-speaker-detail>
       </v-layout>
-      <v-layout row wrap>
-        <tedx-sponsor :sponsor="{img:'https://tedxsanjosedemayo.org/images/sponsors/marcre.png'}"/>
-      </v-layout>
+      </v-container>
+      <v-container grid-list-md text-xs-center>
+
+        <tedx-sponsor></tedx-sponsor>
+    </v-container>
+    <v-container>
+      <tedx-team-member/>
     </v-container>
       <v-slide-y-transition mode="out-in">
         <v-layout column align-center>
@@ -35,7 +39,9 @@ import TedxFooter from './shared/Tedx-footer.vue'
 import TedxCarousel from '@/components/Tedx-carousel.vue'
 import speakersData from '@/assets/speakers-2018.json'
 import TedexSpeakerDetail from '@/components/Tedx-speaker-detail.vue'
-import TedexSponsor from '@/components/sponsor/Tedx-sponsor.vue'
+import TedxSponsor from '@/components/sponsor/Tedx-sponsor.vue'
+import TedxTeamMember from '@/components/team/Tedx-team-member.vue'
+
 
 export default {
   components: {
@@ -43,13 +49,18 @@ export default {
     TedxFooter,
     TedxCarousel,
     TedexSpeakerDetail,
-    TedexSponsor
+    TedxSponsor,
+    TedxTeamMember
 
   },
   data(){
     return {
       speakers: speakersData.speakers
     }
+  },
+  mounted(){
+    console.log('Speaker ID :')
+    console.log(this.speakers[0].id)
   }
 }
 </script>
