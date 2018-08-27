@@ -5,7 +5,8 @@
     <v-card
       flat
       tile
-      class="red darken-1 white--text text-xs-center width-100">
+      class="darken-1 white--text text-xs-center width-100"
+      style="background-color:#e82a0f;">
       <v-card-text >
         <v-btn
           v-for="myIcon in iconsList"
@@ -25,7 +26,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text black">
-        &copy;2018 — <strong><a href="https://www.linkedin.com/in/facundopetre/" class="blue--text">〈code〉with ❤️ by @facup3</a></strong>
+       <strong><a href="https://www.linkedin.com/in/facundopetre/" class="blue--text">〈code〉with ❤️ by @facup3</a></strong>
       </v-card-text>
     </v-card>
   </v-footer>

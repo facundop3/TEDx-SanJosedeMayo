@@ -97,5 +97,114 @@
                   {"url":"https://matiaslove.com/", "icon":"fas fa-globe"}
       ]
     }
+  ],
+  "teamMembers": [
+    {
+      "name":"Diego Barboza",
+      "id": 1,
+      "image":"@/assets/images/team/diego.jpeg",
+      "videoUrl":"https://www.youtube.com/embed/iVZOAq4OO-U",
+      "talk-title":"Aprende seducción y mejora tu calidad de vida",
+      "summary":"",
+      "social": [
+                  {"url": "https://www.fb.com/diego.barboza.9026", "icon":"fab fa-facebook"},
+                  {"url": "", "icon":"fab fa-twitter"},
+                  {"url":"", "icon":"fab fa-linkedin-in"},
+                  {"url":"", "icon":"fab fa-github"},
+                  {"url":"", "icon":"fab fa-youtube"},
+                  {"url":"", "icon":"fab fa-instagram"},
+                  {"url":"", "icon":"fas fa-globe"}
+      ]
+    },
+    {
+      "name":"Evangelina Hernández",
+      "id": 2,
+      "image":"@/assets/images/team/evangelina.jpeg",
+      "summary":"",
+      "social": [
+                  {"url": "https://www.fb.com/evatota", "icon":"fab fa-facebook"},
+                  {"url": "", "icon":"fab fa-twitter"},
+                  {"url":"", "icon":"fab fa-linkedin-in"},
+                  {"url":"", "icon":"fab fa-github"},
+                  {"url":"", "icon":"fab fa-youtube"},
+                  {"url":"https://www.instagram.com/evatotah/", "icon":"fab fa-instagram"},
+                  {"url":"", "icon":"fas fa-globe"}
+      ]
+    },
+    {
+      "name":"Horacio Piriz",
+      "id": 3,
+      "image":"@/assets/images/team/horacio.jpeg",
+      "summary":"",
+      "social": [
+                  {"url": "https://www.fb.com/Horacio.maxx", "icon":"fab fa-facebook"},
+                  {"url": "", "icon":"fab fa-twitter"},
+                  {"url":"", "icon":"fab fa-linkedin-in"},
+                  {"url":"", "icon":"fab fa-github"},
+                  {"url":"", "icon":"fab fa-youtube"},
+                  {"url":"", "icon":"fab fa-instagram"},
+                  {"url":"", "icon":"fas fa-globe"}
+      ]
+    },
+    {
+      "name":"Gonzalo Prado",
+      "id": 4,
+      "image":"@/assets/images/team/gonzalo.jpeg",
+      "summary":"",
+      "social": [
+                  {"url": "https://www.fb.com/gonzaloprado8/", "icon":"fab fa-facebook"},
+                  {"url": "", "icon":"fab fa-twitter"},
+                  {"url":"", "icon":"fab fa-linkedin-in"},
+                  {"url":"", "icon":"fab fa-github"},
+                  {"url":"", "icon":"fab fa-youtube"},
+                  {"url":"https://www.instagram.com/gonzaloprado8/", "icon":"fab fa-instagram"},
+                  {"url":"", "icon":"fas fa-globe"}
+      ]
+    },
+    {
+      "name":"Paola Alcorta",
+      "id": 5,
+      "image":"@/assets/images/team/paola.jpeg",
+      "summary":"Fotografía Músicos 🎶 Teatro 🎭 Danza 💃 Espectáculos en gral 🎬🎤🎨👏",
+      "social": [
+                  {"url": "https://www.facebook.com/paoliita.alcorta", "icon":"fab fa-facebook"},
+                  {"url": "", "icon":"fab fa-twitter"},
+                  {"url":"", "icon":"fab fa-linkedin-in"},
+                  {"url":"", "icon":"fab fa-github"},
+                  {"url":"", "icon":"fab fa-youtube"},
+                  {"url":"https://www.instagram.com/paoalcortafotografia/", "icon":"fab fa-instagram"},
+                  {"url":"", "icon":"fas fa-globe"}
+      ]
+    },
+    {
+      "name":"Héctor Cotelo",
+      "id": 6,
+      "image":"@/assets/images/team/paola.jpeg",
+      "summary":"",
+      "social": [
+                  {"url": "https://www.facebook.com/hcotelo", "icon":"fab fa-facebook"},
+                  {"url": "", "icon":"fab fa-twitter"},
+                  {"url":"", "icon":"fab fa-linkedin-in"},
+                  {"url":"", "icon":"fab fa-github"},
+                  {"url":"", "icon":"fab fa-youtube"},
+                  {"url":"", "icon":"fab fa-instagram"},
+                  {"url":"", "icon":"fas fa-globe"}
+      ]
+    },
+    {
+      "name":"Facundo Petre",
+      "id": 7,
+      "image":"@/assets/images/team/facundo.jpg",
+      "summary":"",
+      "social": [
+                  {"url": "https://www.fb.com/facundo.petre/", "icon":"fab fa-facebook"},
+                  {"url": "https://twitter.com/facup3", "icon":"fab fa-twitter"},
+                  {"url":"https://www.linkedin.com/in/facundopetre/", "icon":"fab fa-linkedin-in"},
+                  {"url":"https://github.com/facundop3", "icon":"fab fa-github"},
+                  {"url":"", "icon":"fab fa-youtube"},
+                  {"url":"", "icon":"fab fa-instagram"},
+                  {"url":"", "icon":"fas fa-globe"}
+      ]
+    }
   ]
 }

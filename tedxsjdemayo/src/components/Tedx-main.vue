@@ -10,11 +10,12 @@
       </v-layout>
       </v-container>
       <v-container grid-list-md text-xs-center>
-
         <tedx-sponsor></tedx-sponsor>
     </v-container>
-    <v-container>
-      <tedx-team-member/>
+    <v-container grid-list-md text-xs-center>
+    <v-layout row wrap>
+      <tedx-team-member v-for="teamMember of teamMembers" :key="teamMember.id" :teamMember="teamMember"/>
+    </v-layout>
     </v-container>
       <v-slide-y-transition mode="out-in">
         <v-layout column align-center>
@@ -37,7 +38,7 @@
 import TedxHeader from './shared/Tedx-header.vue'
 import TedxFooter from './shared/Tedx-footer.vue'
 import TedxCarousel from '@/components/Tedx-carousel.vue'
-import speakersData from '@/assets/speakers-2018.json'
+import eventData2018 from '@/assets/event-data-2018.json'
 import TedexSpeakerDetail from '@/components/Tedx-speaker-detail.vue'
 import TedxSponsor from '@/components/sponsor/Tedx-sponsor.vue'
 import TedxTeamMember from '@/components/team/Tedx-team-member.vue'
@@ -55,17 +56,13 @@ export default {
   },
   data(){
     return {
-      speakers: speakersData.speakers
+      speakers: eventData2018.speakers,
+      teamMembers: eventData2018.teamMembers
     }
-  },
-  mounted(){
-    console.log('Speaker ID :')
-    console.log(this.speakers[0].id)
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
   margin: 40px 0 0;
