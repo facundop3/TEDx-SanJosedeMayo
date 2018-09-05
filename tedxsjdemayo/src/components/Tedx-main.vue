@@ -1,7 +1,7 @@
 <template>
 
   <div>
-    <tedx-header/>
+    <tedx-header @confettiEv="activateConfetti"/>
     <tedx-carousel/>
     <v-container fluid>
     <v-container>
@@ -14,11 +14,17 @@
     </v-container>
     <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
-      <tedx-team-member v-for="teamMember of teamMembers" :key="teamMember.id" :teamMember="teamMember"/>
+      <template v-for="(teamMember, index) of teamMembers" >
+        <tedx-team-member :key="teamMember.id"  :teamMember="teamMember" v-if="index != teamMembers.length -1" :data-text="index"/>
+      </template>
+        <v-flex xs4 height="382px">
+        </v-flex>
+        <tedx-team-member :teamMember="teamMembers[teamMembers.length -1]" />
     </v-layout>
     </v-container>
       <v-slide-y-transition mode="out-in">
         <v-layout column align-center>
+          <canvas id="confetti-holder"></canvas>
           <blockquote>
             &#8220;First, solve the problem. Then, write the code.&#8221;
             <footer>
@@ -43,7 +49,6 @@ import TedexSpeakerDetail from '@/components/Tedx-speaker-detail.vue'
 import TedxSponsor from '@/components/sponsor/Tedx-sponsor.vue'
 import TedxTeamMember from '@/components/team/Tedx-team-member.vue'
 
-
 export default {
   components: {
     TedxHeader,
@@ -59,6 +64,17 @@ export default {
       speakers: eventData2018.speakers,
       teamMembers: eventData2018.teamMembers
     }
+  },
+  methods:{
+    activateConfetti: function (){
+      let confettiSettings = {"target":"confetti-holder","max":"500","size":"1","animate":true,"props":["circle","square","triangle","line"],"colors":[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],"clock":"15","width":"1680","height":"918"}
+      let confetti = new ConfettiGenerator(confettiSettings);
+      confetti.render();
+      setTimeout(()=> confetti.clear() , 4000)
+    }
+  },
+  mounted(){
+    this.activateConfetti()
   }
 }
 </script>
@@ -81,6 +97,10 @@ a {
 
 </style>
 <style>
+#confetti-holder{
+  position: absolute;
+  top: 5em;
+}
 .v-carousel {
   height: 100vh !important;
 }

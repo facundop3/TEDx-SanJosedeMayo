@@ -1,7 +1,8 @@
 <template>
-        <v-flex xs12 sm6>
-          <v-card>
+        <v-flex xs12 sm6 height="690px">
+          <v-card height="100%">
             <v-container
+              height="100%"
               fluid
               grid-list-md
             >
@@ -9,7 +10,7 @@
                 <v-flex
                   xs12
                 >
-                  <v-card>
+                  <v-card height="650px">
                     <v-card-media
                       height="315px"
                       width="560px"

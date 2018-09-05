@@ -4,6 +4,7 @@ import './plugins/vuetify'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 import routes from './routes'
+import "confetti-js"
 Vue.config.productionTip = false
 
 import Vuetify from 'vuetify'

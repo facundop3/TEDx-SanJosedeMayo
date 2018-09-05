@@ -4,6 +4,7 @@
     <v-spacer></v-spacer>
     <v-toolbar-items class="red--text">
       <v-btn flat @click="backHome">Inicio</v-btn>
+      <v-btn flat class="red--text" @click="emitConfettiEv">🎊🎉</v-btn>
         <v-menu offset-y>
           <v-btn slot="activator" dark flat class="red--text">
             Oradores
@@ -21,7 +22,6 @@
   </v-toolbar>
 </template>
 <script>
-
 import logo from '@/assets/images/TEDxSJ-small.png'
 export default {
   data (){
@@ -36,6 +36,9 @@ export default {
   methods:{
     backHome(){
       this.$router.push('/')
+    },
+    emitConfettiEv(){
+      this.$emit('confettiEv')
     }
   }
 }

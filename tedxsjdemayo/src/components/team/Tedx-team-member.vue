@@ -1,8 +1,8 @@
 <template>
-      <v-flex xs4>
-        <v-card>
+      <v-flex xs4 height="382px">
+        <v-card height="100%" class="speaker-card">
         <v-card-media
-          class="white--text"
+          class="white--text" 
           height="250px"
           width="250px"
         >
@@ -14,7 +14,7 @@
           <div class="team-image" style="background-position-y:0;" :style="{'background-image': `url('${currentImage.image}')`, 'background-size': currentImage.size}" alt="avatar"></div>
         </v-avatar>
         </v-card-media>
-        <v-card-title>
+        <v-card-title height="289px">
           <div>
             <h3>{{teamMember.name}}</h3><br>
             <span>{{teamMember.summary}}</span>
@@ -58,6 +58,14 @@ export default {
 </script>
 
 <style scoped>
+
+.speaker-card{
+  transition: .5s;
+}
+.speaker-card:hover {
+  transform: scale(1.05);
+  z-index: 4;
+}
 .v-avatar{
   margin: auto;
 }
