@@ -5,6 +5,10 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import routes from './routes'
 import "confetti-js"
+import vueSmoothScroll from 'vue-smoothscroll'
+
+Vue.use(vueSmoothScroll)
+
 Vue.config.productionTip = false
 
 import Vuetify from 'vuetify'

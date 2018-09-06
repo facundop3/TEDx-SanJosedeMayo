@@ -1,24 +1,24 @@
 <template>
 
   <div>
-    <tedx-header @confettiEv="activateConfetti"/>
+    <tedx-header @confettiEv="activateConfetti" @moveTo="moveToMain"/>
     <tedx-carousel/>
     <v-container fluid>
     <v-container>
-       <v-layout row wrap class="title-layout">
+       <v-layout row wrap class="title-layout" ref="ORADORES">
          <h1>Nuestros Oradores </h1><span class="spinEmoji" id="clapEmoji">👏</span>
        </v-layout>
       <v-layout row wrap>
       <tedex-speaker-detail v-for="speaker of speakers" :key="speaker.id" :speaker="speaker"></tedex-speaker-detail>
       </v-layout>
       </v-container>
-      <v-layout row wrap class="title-layout">
+      <v-layout row wrap class="title-layout" ref="SPONSORS">
         <h1>Nuestros Sponsors </h1><span class="spinEmoji">⭐️</span>
       </v-layout>
       <v-container grid-list-md text-xs-center>
         <tedx-sponsor></tedx-sponsor>
     </v-container>
-    <v-layout row wrap class="title-layout">
+    <v-layout row wrap class="title-layout" ref="EQUIPO">
       <h1>Nuestros Equipo </h1><span class="spinEmoji" id="hart">❤️</span>
     </v-layout>
     <v-container grid-list-md text-xs-center>
@@ -81,6 +81,11 @@ export default {
       confetti.render();
       setTimeout(()=>{
        confetti.clear()} , 6000)
+    },
+    moveToMain(ev){
+      console.log(ev)
+      let ourSponsors = this.$refs[ev]
+      this.$SmoothScroll(ourSponsors, 1000)
     }
   },
   mounted(){
