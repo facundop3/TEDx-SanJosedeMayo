@@ -1,6 +1,6 @@
 <template>
         <v-flex xs12 sm6 height="690px">
-          <v-card height="100%">
+          <v-card height="100%" class="speaker-card">
             <v-container
               height="100%"
               fluid
@@ -15,7 +15,7 @@
                       height="315px"
                       width="560px"
                     >
-                        <!-- <iframe width="100%" height="100%" :src="speaker.videoUrl" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                        <iframe width="100%" height="100%" :src="speaker.videoUrl" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </v-card-media>
                     <v-card-title primary-title>
                       <div>
@@ -52,6 +52,13 @@ export default {
 }
 </script>
 <style scoped>
+.speaker-card{
+  transition: .5s;
+}
+.speaker-card:hover {
+  transform: scale(1.05);
+  z-index: 4;
+}
 a{
   text-decoration: none;
   color: #e82a0f;

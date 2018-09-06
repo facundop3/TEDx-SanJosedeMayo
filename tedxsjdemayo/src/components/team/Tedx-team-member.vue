@@ -1,6 +1,6 @@
 <template>
       <v-flex xs4 height="382px">
-        <v-card height="100%" class="speaker-card">
+        <v-card height="100%" class="member-card">
         <v-card-media
           class="white--text" 
           height="250px"
@@ -59,10 +59,10 @@ export default {
 
 <style scoped>
 
-.speaker-card{
+.member-card{
   transition: .5s;
 }
-.speaker-card:hover {
+.member-card:hover {
   transform: scale(1.05);
   z-index: 4;
 }

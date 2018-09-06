@@ -6,7 +6,7 @@
       "image":"@/assets/images/speakers/carmen.jpg",
       "videoUrl":"https://www.youtube.com/embed/KTVz-gBokrc",
       "talk-title":"Quien canta sus males espanta... \n Animate... cantemos",
-      "summary":"Es músico y docente en dicha área. La música es una disciplina muy presente en su familia. Se desempeña como profesora en bachillerato de educación secundaria y en el Instituto de Profesores \"Artigas\". Es directora y arregladora de coros de adultos, jóvenes y niños. Lleva adelante un taller de sensibilización a la música con niños de 2 a 8 años, y de murga con todas las edades, a demás de Uruguay ha participado y dictado talleres para docentes de música en Argentina y Brasil, trabajando bajo la modalidad de ludopedagogía.",
+      "summary":"Carmen nos demuestra que todos podemos cantar. Es músico y docente en dicha área. La música es una disciplina muy presente en su familia. Se desempeña como profesora en bachillerato de educación secundaria y en el Instituto de Profesores \"Artigas\". Es directora y arregladora de coros de adultos, jóvenes y niños. Lleva adelante un taller de sensibilización a la música con niños de 2 a 8 años, y de murga con todas las edades, a demás de Uruguay ha participado y dictado talleres para docentes de música en Argentina y Brasil, trabajando bajo la modalidad de ludopedagogía.",
       "social": [
         {"url": "", "icon":"fab fa-facebook"},
         {"url": "", "icon":"fab fa-twitter"},
@@ -22,7 +22,7 @@
       "image":"@/assets/images/speakers/eduardo.jpeg",
       "videoUrl":"https://www.youtube.com/embed/CjUxdk0Tgvk",
       "talk-title":"¿Por qué soy ecologista?",
-      "summary":"Productor quesero artesanal orgánico, certificado, dedicado a la producción agroecológica desde hace veinte años. Cuenta con formación en bienestar animal de la Universidad de Milán y en certificación participativa de la producción agroecológica en la Red EcoVida de Brasil, además realizó una experiencia de apicultura ecológica en Valencia, España. Fue integrante de APODU (Asociación de productores orgánicos del Uruguay), luego pasó a formar parte desde su fundación, de la Red de Agroecología Nacional, actualmente milita en la Regional San José de dicha red. Lleva adelante su establecimiento productivo sin el uso de agrotóxicos, se define como un ambientalista con amor a la naturaleza.",
+      "summary":"Eduardo reflexiona sobre la situación ambiental provocada por el sistema de producción agropecuaria dominante. Productor quesero artesanal orgánico, certificado, dedicado a la producción agroecológica desde hace veinte años. Cuenta con formación en bienestar animal de la Universidad de Milán y en certificación participativa de la producción agroecológica en la Red EcoVida de Brasil, además realizó una experiencia de apicultura ecológica en Valencia, España. Fue integrante de APODU (Asociación de productores orgánicos del Uruguay), luego pasó a formar parte desde su fundación, de la Red de Agroecología Nacional, actualmente milita en la Regional San José de dicha red. Lleva adelante su establecimiento productivo sin el uso de agrotóxicos, se define como un ambientalista con amor a la naturaleza.",
       "social": [
         {"url": "", "icon":"fab fa-facebook"},
         {"url": "", "icon":"fab fa-twitter"},
@@ -38,7 +38,7 @@
       "image":"@/assets/images/speakers/gonzalo.jpeg",
       "videoUrl":"https://www.youtube.com/embed/D64BYErIKUA",
       "talk-title":"3 horas en 18 minutos",
-      "summary":"Chef egresado del Instituto Crandon, apasionado de la Gastronomía.\n Se autodefine como una persona innovadora que busca inculcar la cocina como una experiencia para disfrutar y compartir. Organizador del Festival Gastronómico de San José. Trabajó con varios chef reconocidos como Ana Maria Bozzo (tenedor de oro en Francia), entre otros.",
+      "summary":"Gonzalo nos trae recuerdos vinculados a la cocina y lo que significa para nuestra vida cocinar. Chef egresado del Instituto Crandon, apasionado de la Gastronomía. Se autodefine como una persona innovadora que busca inculcar la cocina como una experiencia para disfrutar y compartir. Organizador del Festival Gastronómico de San José. Trabajó con varios chef reconocidos como Ana Maria Bozzo (tenedor de oro en Francia), entre otros. Chef egresado del Instituto Crandon, apasionado de la Gastronomía. Se auto define como una persona innovadora que busca inculcar la cocina como una experiencia para disfrutar y compartir. Organizador del Festival Gastronómico de San José. Trabajó con varios chef reconocidos como con la Chef Ana Maria Bozzo (tenedor de oro en Francia) entre otros.",
       "social": [
         {"url": "", "icon":"fab fa-facebook"},
         {"url": "", "icon":"fab fa-twitter"},
@@ -54,7 +54,7 @@
       "image":"",
       "videoUrl":"https://www.youtube.com/embed/UnGZxzl6Zek",
       "talk-title":"Compartir la vida donando sangre",
-      "summary":"Médico especialista en Hemoterapia y Medicina transfusional. Posgrado en Gestión y Administración en Políticas de Salud. Directora Técnica del Banco de Sangre Departamental de San José y de Flores. Integrante de la Sociedad de Hemoterapia del Uruguay y del grupo Comunidad, un grupo de promotoras de la donación voluntaria de sangre en San José. \n Completamente convencida de que la Donación de sangre voluntaria es uno de los mayores actos de solidaridad y altruismo en nuestra sociedad.",
+      "summary":"Ana nos demuestra lo importante de ser donante voluntario de sangre. Médico especialista en Hemoterapia y Medicina transfusional. Posgrado en Gestión y Administración en Políticas de Salud. Directora Técnica del Banco de Sangre Departamental de San José y de Flores. Integrante de la Sociedad de Hemoterapia del Uruguay y del grupo Comunidad, un grupo de promotoras de la donación voluntaria de sangre en San José. Completamente convencida de que la Donación de sangre voluntaria es uno de los mayores actos de solidaridad y altruismo en nuestra sociedad.",
       "social": [
         {"url": "", "icon":"fab fa-facebook"},
         {"url": "", "icon":"fab fa-twitter"},
@@ -86,7 +86,7 @@
       "image":"",
       "videoUrl":"https://www.youtube.com/embed/iVZOAq4OO-U",
       "talk-title":"Aprende seducción y mejora tu calidad de vida",
-      "summary":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt eos eum adipisci. Iusto in quod repellendus placeat laborum aliquid sequi voluptas natus nihil doloribus? Fugit quaerat sed accusantium quisquam!",
+      "summary":"Matias nos da algunos consejos sobre las habilidades sociales Conocido como Matías Love, es experto en dinámicas sociales, liderazgo y seducción. Apasionado por el comportamiento humano, la programación neurolingüística y las neurociencias. Desde hace dos años viene enseñando a personas principalmente de Uruguay y Argentina, habilidades sociales para convertirse en personas más atractivas e influyentes y a construir vínculos amorosos saludables. Su compromiso es inspirar a las personas a conquistar su mejor versión desde el desarrollo personal.",
       "social": [
                   {"url": "https://www.facebook.com/soymatiaslove/", "icon":"fab fa-facebook"},
                   {"url": "", "icon":"fab fa-twitter"},
@@ -195,7 +195,7 @@
       "name":"Facundo Petre",
       "id": 7,
       "image":"@/assets/images/team/facundo.jpg",
-      "summary":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt eos eum adipisci. Iusto in quod repellendus placeat laborum aliquid sequi voluptas natus nihil doloribus? Fugit quaerat sed accusantium quisquam!",
+      "summary":"Chico apasionado por la tecnología, desarrollador de software en constante crecimiento. Siempre dispuesto a tomar nuevos retos y desafíos, creciendo en base al conocimiento que estos otorgan. 🚀",
       "social": [
                   {"url": "https://www.fb.com/facundo.petre/", "icon":"fab fa-facebook"},
                   {"url": "https://twitter.com/facup3", "icon":"fab fa-twitter"},

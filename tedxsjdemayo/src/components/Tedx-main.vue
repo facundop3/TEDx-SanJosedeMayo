@@ -5,13 +5,22 @@
     <tedx-carousel/>
     <v-container fluid>
     <v-container>
+       <v-layout row wrap class="title-layout">
+         <h1>Nuestros Oradores </h1><span class="spinEmoji" id="clapEmoji">👏</span>
+       </v-layout>
       <v-layout row wrap>
       <tedex-speaker-detail v-for="speaker of speakers" :key="speaker.id" :speaker="speaker"></tedex-speaker-detail>
       </v-layout>
       </v-container>
+      <v-layout row wrap class="title-layout">
+        <h1>Nuestros Sponsors </h1><span class="spinEmoji">⭐️</span>
+      </v-layout>
       <v-container grid-list-md text-xs-center>
         <tedx-sponsor></tedx-sponsor>
     </v-container>
+    <v-layout row wrap class="title-layout">
+      <h1>Nuestros Equipo </h1><span class="spinEmoji" id="hart">❤️</span>
+    </v-layout>
     <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
       <template v-for="(teamMember, index) of teamMembers" >
@@ -24,7 +33,7 @@
     </v-container>
       <v-slide-y-transition mode="out-in">
         <v-layout column align-center>
-          <canvas id="confetti-holder"></canvas>
+          <canvas id="confetti-holder" ref="confettiHolder"></canvas>
           <blockquote>
             &#8220;First, solve the problem. Then, write the code.&#8221;
             <footer>
@@ -67,10 +76,11 @@ export default {
   },
   methods:{
     activateConfetti: function (){
-      let confettiSettings = {"target":"confetti-holder","max":"500","size":"1","animate":true,"props":["circle","square","triangle","line"],"colors":[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],"clock":"15","width":"1680","height":"918"}
+      let confettiSettings = {"target":"confetti-holder","max":"500","size":"1","animate":true,"props":["circle","square","triangle","line"],"colors":[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],"clock":"5","width":"1680","height":"918"}
       let confetti = new ConfettiGenerator(confettiSettings);
       confetti.render();
-      setTimeout(()=> confetti.clear() , 4000)
+      setTimeout(()=>{
+       confetti.clear()} , 6000)
     }
   },
   mounted(){
@@ -80,6 +90,46 @@ export default {
 </script>
 
 <style scoped>
+#hart{
+  animation-duration: 1s;
+  animation-name: hartAnimation;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+@keyframes hartAnimation {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.15);
+  }
+}
+#clapEmoji{
+  animation: clapping 0.5s infinite;
+  animation-direction: alternate;
+  will-change: transform;
+}
+@keyframes clapping {
+  from{
+    transform: rotate(0) scaleX(-1);
+  }
+  to{
+    transform: rotate(90deg) scaleX(1.2);
+  }
+}
+.spinEmoji{
+  transition: 1s;
+  font-size: 30px;
+}
+.spinEmoji:hover{
+  transform: rotate(360deg);
+}
+
+.title-layout{
+  justify-content: center;
+  margin-bottom: 2em;
+}
 h3 {
   margin: 40px 0 0;
 }
@@ -101,6 +151,7 @@ a {
   position: absolute;
   top: 5em;
 }
+
 .v-carousel {
   height: 100vh !important;
 }
