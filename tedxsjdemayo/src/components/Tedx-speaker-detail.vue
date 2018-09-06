@@ -25,7 +25,7 @@
                     </v-card-title>
                     <v-card-actions>
                       <v-spacer></v-spacer>
-                        <v-btn icon v-for="social of socials" :key="social" v-if="social.url">
+                        <v-btn icon v-for="social of socials" :key="social.icon" v-if="social.url">
                       <a  :href="social.url" target="_blanck">
                           <v-icon>{{social.icon}}</v-icon>
                       </a>
