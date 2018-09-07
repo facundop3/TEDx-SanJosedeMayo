@@ -1,5 +1,5 @@
 <template>
-      <v-flex xs4 height="382px">
+      <v-flex xs12 sm4 height="382px">
         <v-card height="100%" class="member-card">
         <v-card-media
           class="white--text" 

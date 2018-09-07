@@ -2,7 +2,7 @@
   <v-layout row wrap>
     <v-flex 
       v-for="image of images"
-      :key="image.id" xs4>
+      :key="image.id" xs12 sm4>
         <a :href="image.url" target="_blank">
           <v-avatar
           v-if="image.src"

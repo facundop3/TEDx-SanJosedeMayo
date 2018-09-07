@@ -95,6 +95,10 @@ export default {
 </script>
 
 <style scoped>
+#confetti-holder{
+  width: 100% !important;
+}
+
 #hart{
   animation-duration: 1s;
   animation-name: hartAnimation;

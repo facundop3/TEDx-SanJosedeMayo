@@ -31,7 +31,6 @@ module.exports = {
         'css-loader'
       ]
     }
-
     ]
   },
   plugins:[
