@@ -1,26 +1,30 @@
 <template>
-    <v-toolbar dark color="darken-1"  style="background-color:white; color:#e82a0f;">
+    <v-toolbar dark color="darken-1"  style="background-color:white; color:#e82a0f; z-index:2;">
     <v-toolbar-title><img class="logo" :src="logo"/></v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="red--text">
-      <v-btn flat @click="backHome">Inicio</v-btn>
-      <v-btn flat class="red--text" @click="emitConfettiEv">🎊🎉</v-btn>
-          <v-btn slot="activator" dark flat class="red--text" @click="moveTo">
-            Oradores
-          </v-btn>
-        <!-- <v-menu offset-y>
-          <v-btn slot="activator" dark flat class="red--text" @click="moveTo">
-            Oradores
-          </v-btn>
-          <v-list>
-            <v-list-tile v-for="(item, index) in items" :key="index">
-              <v-list-tile-title class="red--text">{{ item.title }}</v-list-tile-title>
-            </v-list-tile>
-          </v-list>
-      </v-menu > -->
-      <v-btn flat class="red--text" @click="moveTo">Sponsors</v-btn>
-      <v-btn flat class="red--text" @click="moveTo">Equipo</v-btn>
-      <v-btn flat class="red--text" @click="moveTo">Contacto</v-btn>
+      <v-btn flat class="red--text confetti" @click="emitConfettiEv">🎊🎉</v-btn>
+        <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Oradores </v-btn>
+        <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Sponsors</v-btn>
+        <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Equipo</v-btn>
+        <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Contacto</v-btn>
+       <v-menu bottom left v-show="xsMenu">
+            <v-btn
+              slot="activator"
+              dark
+              icon>
+              <v-icon class="redIcon">fa-ellipsis-v</v-icon>
+            </v-btn>
+            <v-list>
+              <v-list-tile
+                v-for="(item, i) in items"
+                :key="i"
+                @click="moveTo"
+                >
+                <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+              </v-list-tile>
+            </v-list>
+          </v-menu>
     </v-toolbar-items>
   </v-toolbar>
 </template>
@@ -30,10 +34,13 @@ export default {
   data (){
     return {
       items: [
-        { title: '2018' },
-        { title: '2019?' },
+        { title: 'Oradores' },
+        { title: 'Sponsors' },
+        { title: 'Equipo' },
+        { title: 'Contacto' }
       ],
-      logo
+      logo,
+      xsMenu: this.$vuetify.breakpoint.xs
     }
   },
   methods:{
@@ -50,16 +57,16 @@ export default {
   }
 }
 </script>
-<style>
-.red{
-  color:#e82a0f;
+<style scoped>
+.confetti{
+  font-size: 30px;
+}
+.redIcon{
+  color:#e82a0f !important;
   font-weight: bold;
 }
-</style>
-<style scoped>
 .logo{
-  height: 85px;
-  margin-top: 10px;
+  height: 55px;
 }
 </style>
 

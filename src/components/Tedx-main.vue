@@ -1,5 +1,4 @@
 <template>
-
   <div>
     <tedx-header @confettiEv="activateConfetti" @moveTo="moveToMain"/>
     <tedx-carousel/>
@@ -76,7 +75,8 @@ export default {
   },
   methods:{
     activateConfetti: function (){
-      let confettiSettings = {"target":"confetti-holder","max":"500","size":"1","animate":true,"props":["circle","square","triangle","line"],"colors":[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],"clock":"5","width":"1680","height":"918"}
+      let size = this.$vuetify.breakpoint.xs ? "2" : "1"
+      let confettiSettings = {"target":"confetti-holder","max":"500",size,"animate":true,"props":["circle","square","triangle","line"],"colors":[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],"clock":"5","width":"1680","height":"918"}
       let confetti = new ConfettiGenerator(confettiSettings);
       confetti.render();
       setTimeout(()=>{
@@ -97,6 +97,7 @@ export default {
 <style scoped>
 #confetti-holder{
   width: 100% !important;
+  height: 100vh;
 }
 
 #hart{
@@ -158,7 +159,7 @@ a {
 <style>
 #confetti-holder{
   position: absolute;
-  top: 5em;
+  top: 0;
 }
 
 .v-carousel {

@@ -10,7 +10,7 @@
                 <v-flex
                   xs12
                 >
-                  <v-card height="650px">
+                  <v-card class="textCard">
                     <v-card-media
                       height="315px"
                       width="560px"
@@ -52,6 +52,10 @@ export default {
 }
 </script>
 <style scoped>
+.textCard{
+  min-height: 650px;
+  height: 100%;
+}
 .speaker-card{
   transition: .5s;
 }
