@@ -195,7 +195,7 @@
       "name":"Facundo Petre",
       "id": 7,
       "image":"@/assets/images/team/facundo.jpg",
-      "summary":"Chico apasionado por la tecnología, desarrollador de software en constante crecimiento. Siempre dispuesto a tomar nuevos retos y desafíos, creciendo en base al conocimiento que estos otorgan. 🚀",
+      "summary":"Chico apasionado por la tecnología, desarrollador de software en constante crecimiento. Siempre dispuesto a tomar nuevos retos y desafíos, creciendo en base al conocimiento que estos otorgan.",
       "social": [
                   {"url": "https://www.fb.com/facundo.petre/", "icon":"fab fa-facebook"},
                   {"url": "https://twitter.com/facup3", "icon":"fab fa-twitter"},

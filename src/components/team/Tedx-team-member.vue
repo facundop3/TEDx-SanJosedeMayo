@@ -5,19 +5,22 @@
           class="white--text" 
           height="250px"
           width="250px"
+          @click="launchRocket"
         >
         <v-avatar
         size="250"
         color="grey lighten-4"
         style="margin:'auto';"
+        @click="launchRocket"
         >
-          <div class="team-image" style="background-position-y:0;" :style="{'background-image': `url('${currentImage.image}')`, 'background-size': currentImage.size}" alt="avatar"></div>
+          <div @click="launchRocket" class="team-image" style="background-position-y:0;" :style="{'background-image': `url('${currentImage.image}')`, 'background-size': currentImage.size}" alt="avatar"></div>
         </v-avatar>
         </v-card-media>
-        <v-card-title height="289px">
+        <v-card-title height="289px" @click="launchRocket">
           <div>
             <h3>{{teamMember.name}}</h3><br>
-            <span>{{teamMember.summary}}</span>
+            <span >{{teamMember.summary}}</span>
+            <p v-if="teamMember.id == 7" ref="rocket" id="rocket">🚀</p>
           </div>
         </v-card-title>
         <v-card-actions>
@@ -53,12 +56,37 @@ export default {
   props: ['teamMember'],
   created(){
     this.currentImage = this.images.filter(image => image.id == this.$props.teamMember.id)[0]
+  },
+  methods:{
+    launchRocket: function (){
+      console.log(this.$refs.rocket.classList)
+      if(Array.from(this.$refs.rocket.classList).includes('active')){
+        this.$refs.rocket.classList.remove('active')
+      }else{
+        this.$refs.rocket.classList.add('active')
+      }
+    }
   }
 }
 </script>
 
 <style scoped>
-
+#rocket.active{
+  animation-duration: 5s;
+  animation-name: rocketActive;
+  will-change: transform;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+@keyframes rocketActive {
+  from{
+    transform: translateX(0) translateY(0) scale(1);
+  }
+  to {
+    transform: translateX(1000px) translateY(-1000px) scale(10);
+  }
+}
 .member-card{
   transition: .5s;
 }
