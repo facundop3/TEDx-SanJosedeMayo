@@ -120,7 +120,7 @@
       "name":"Evangelina Hernández",
       "id": 2,
       "image":"@/assets/images/team/evangelina.jpeg",
-      "summary":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt eos eum adipisci. Iusto in quod repellendus placeat laborum aliquid sequi voluptas natus nihil doloribus? Fugit quaerat sed accusantium quisquam!",
+      "summary":"Maestra de profesión. Le gusta mucho leer, apasionada por los libros. Soñadora y emprendedora.",
       "social": [
                   {"url": "https://www.fb.com/evatota", "icon":"fab fa-facebook"},
                   {"url": "", "icon":"fab fa-twitter"},
@@ -128,51 +128,6 @@
                   {"url":"", "icon":"fab fa-github"},
                   {"url":"", "icon":"fab fa-youtube"},
                   {"url":"https://www.instagram.com/evatotah/", "icon":"fab fa-instagram"},
-                  {"url":"", "icon":"fas fa-globe"}
-      ]
-    },
-    {
-      "name":"Horacio Piriz",
-      "id": 3,
-      "image":"@/assets/images/team/horacio.jpeg",
-      "summary":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt eos eum adipisci. Iusto in quod repellendus placeat laborum aliquid sequi voluptas natus nihil doloribus? Fugit quaerat sed accusantium quisquam!",
-      "social": [
-                  {"url": "https://www.fb.com/Horacio.maxx", "icon":"fab fa-facebook"},
-                  {"url": "", "icon":"fab fa-twitter"},
-                  {"url":"", "icon":"fab fa-linkedin-in"},
-                  {"url":"", "icon":"fab fa-github"},
-                  {"url":"", "icon":"fab fa-youtube"},
-                  {"url":"", "icon":"fab fa-instagram"},
-                  {"url":"", "icon":"fas fa-globe"}
-      ]
-    },
-    {
-      "name":"Gonzalo Prado",
-      "id": 4,
-      "image":"@/assets/images/team/gonzalo.jpeg",
-      "summary":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt eos eum adipisci. Iusto in quod repellendus placeat laborum aliquid sequi voluptas natus nihil doloribus? Fugit quaerat sed accusantium quisquam!",
-      "social": [
-                  {"url": "https://www.fb.com/gonzaloprado8/", "icon":"fab fa-facebook"},
-                  {"url": "", "icon":"fab fa-twitter"},
-                  {"url":"", "icon":"fab fa-linkedin-in"},
-                  {"url":"", "icon":"fab fa-github"},
-                  {"url":"", "icon":"fab fa-youtube"},
-                  {"url":"https://www.instagram.com/gonzaloprado8/", "icon":"fab fa-instagram"},
-                  {"url":"", "icon":"fas fa-globe"}
-      ]
-    },
-    {
-      "name":"Paola Alcorta",
-      "id": 5,
-      "image":"@/assets/images/team/paola.jpeg",
-      "summary":"Fotografía Músicos 🎶 Teatro 🎭 Danza 💃 Espectáculos en gral 🎬🎤🎨👏",
-      "social": [
-                  {"url": "https://www.facebook.com/paoliita.alcorta", "icon":"fab fa-facebook"},
-                  {"url": "", "icon":"fab fa-twitter"},
-                  {"url":"", "icon":"fab fa-linkedin-in"},
-                  {"url":"", "icon":"fab fa-github"},
-                  {"url":"", "icon":"fab fa-youtube"},
-                  {"url":"https://www.instagram.com/paoalcortafotografia/", "icon":"fab fa-instagram"},
                   {"url":"", "icon":"fas fa-globe"}
       ]
     },

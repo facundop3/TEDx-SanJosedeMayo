@@ -59,7 +59,6 @@ export default {
   },
   methods:{
     launchRocket: function (){
-      console.log(this.$refs.rocket.classList)
       if(Array.from(this.$refs.rocket.classList).includes('active')){
         this.$refs.rocket.classList.remove('active')
       }else{

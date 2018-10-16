@@ -83,7 +83,6 @@ export default {
        confetti.clear()} , 6000)
     },
     moveToMain(ev){
-      console.log(ev)
       let ourSponsors = this.$refs[ev]
       this.$SmoothScroll(ourSponsors, 1000)
     }
