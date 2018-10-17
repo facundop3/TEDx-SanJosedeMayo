@@ -39,7 +39,7 @@ export default {
         { title: 'Equipo' },
         { title: 'Contacto' }
       ],
-      logo,
+      logo: logo,
       xsMenu: this.$vuetify.breakpoint.xs
     }
   },
