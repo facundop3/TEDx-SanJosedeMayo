@@ -1,13 +1,12 @@
 <template>
     <v-toolbar dark color="darken-1"  style="background-color:white; color:#e82a0f; z-index:2;">
-    <v-toolbar-title><img class="logo" :src="logo"/></v-toolbar-title>
+    <v-toolbar-title><img class="logo" :src="logo" @click="backHome"/></v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="red--text">
-      <v-btn flat class="red--text confetti" @click="emitConfettiEv">🎊🎉</v-btn>
         <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Oradores </v-btn>
         <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Sponsors</v-btn>
         <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Equipo</v-btn>
-        <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Contacto</v-btn>
+        <v-btn  v-show="!xsMenu" flat class="red--text" @click="goTo2018">2018</v-btn>
        <v-menu bottom left v-show="xsMenu">
             <v-btn
               slot="activator"
@@ -37,7 +36,7 @@ export default {
         { title: 'Oradores' },
         { title: 'Sponsors' },
         { title: 'Equipo' },
-        { title: 'Contacto' }
+        { title: '2018' }
       ],
       logo: logo,
       xsMenu: this.$vuetify.breakpoint.xs
@@ -47,8 +46,8 @@ export default {
     backHome(){
       this.$router.push('/')
     },
-    emitConfettiEv(){
-      this.$emit('confettiEv')
+    goTo2018(){
+      this.$router.push('/2018')
     },
     moveTo(ev){
       let buttonRef = ev.target.innerText.toUpperCase()
@@ -58,9 +57,6 @@ export default {
 }
 </script>
 <style scoped>
-.confetti{
-  font-size: 30px;
-}
 .redIcon{
   color:#e82a0f !important;
   font-weight: bold;

@@ -5,10 +5,10 @@
       :key="image.id" xs12 sm4>
         <a :href="image.url" target="_blank">
           <v-avatar
-          v-if="image.src"
-          :tile="true"
-          :size="200"
-          color="grey lighten-4">
+            v-if="image.src"
+            :tile="true"
+            :size="200"
+            color="grey lighten-4">
             <img :src="image.src" alt="avatar" >
           </v-avatar>
         </a>
@@ -49,44 +49,14 @@ export default {
           url:'http://www.marcre.com.uy/',
           id:5
         },
+         {
+          src:'',
+          id:'fill-1'
+        },
         {
           src: require('@/assets/images/sponsors/amsj.png'),
           url:'http://www.amsj.com.uy/',
           id:1
-        },
-        {
-          src: require('@/assets/images/sponsors/peraza-gonzales.png'),
-          url:'',
-          id:7
-        },
-        {
-          src: require('@/assets/images/sponsors/cantina-club-sj.png'),
-          url:'https://www.facebook.com/CantinadelClubSanJose/',
-          id:2
-        },
-        {
-          src: require('@/assets/images/sponsors/choco-artesanal.jpg'),
-          url:'https://www.facebook.com/ChocoArtesanalsj/',
-          id:3
-        },
-        {
-          src: require('@/assets/images/sponsors/hotel-centro.png'),
-          url:'http://www.hcentro.com/',
-          id:4
-        },
-        {
-          src: require('@/assets/images/sponsors/kroser.jpeg'),
-          url:'http://www.enfrecuencia.com.uy/',
-          id:10
-        },
-        {
-          src:'',
-          id:'fill-3'
-        },
-        {
-          src: require('@/assets/images/sponsors/en-frecuencia.jpeg'),
-          url:'http://www.enfrecuencia.com.uy/',
-          id:11
         }
       ]
     }

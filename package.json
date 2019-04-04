@@ -9,7 +9,6 @@
     "build:webpack": "webpack --config ./webpack.config.js"
   },
   "dependencies": {
-    "confetti-js": "0.0.13",
     "vue": "^2.5.16",
     "vue-awesome": "^2.3.8",
     "vue-loader": "^15.2.6",

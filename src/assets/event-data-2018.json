@@ -102,63 +102,22 @@
     {
       "name":"Diego Barboza",
       "id": 1,
-      "image":"@/assets/images/team/diego.jpeg",
-      "videoUrl":"https://www.youtube.com/embed/iVZOAq4OO-U",
-      "talk-title":"Aprende seducción y mejora tu calidad de vida",
-      "summary":"Agrónomo de profesión, afín a la producción sustentable y la utilización óptima de los recursos naturales. Entusiasta por aprender, buscando forjar ideas propias",
       "social": [
-                  {"url": "https://www.fb.com/diego.barboza.9026", "icon":"fab fa-facebook"},
-                  {"url": "", "icon":"fab fa-twitter"},
-                  {"url":"", "icon":"fab fa-linkedin-in"},
-                  {"url":"", "icon":"fab fa-github"},
-                  {"url":"", "icon":"fab fa-youtube"},
-                  {"url":"", "icon":"fab fa-instagram"},
-                  {"url":"", "icon":"fas fa-globe"}
-      ]
-    },
-    {
-      "name":"Evangelina Hernández",
-      "id": 2,
-      "image":"@/assets/images/team/evangelina.jpeg",
-      "summary":"Maestra de profesión. Le gusta mucho leer, apasionada por los libros. Soñadora y emprendedora.",
-      "social": [
-                  {"url": "https://www.fb.com/evatota", "icon":"fab fa-facebook"},
-                  {"url": "", "icon":"fab fa-twitter"},
-                  {"url":"", "icon":"fab fa-linkedin-in"},
-                  {"url":"", "icon":"fab fa-github"},
-                  {"url":"", "icon":"fab fa-youtube"},
-                  {"url":"https://www.instagram.com/evatotah/", "icon":"fab fa-instagram"},
-                  {"url":"", "icon":"fas fa-globe"}
+        {"url": "https://www.fb.com/diego.barboza.9026", "icon":"fab fa-facebook"}
       ]
     },
     {
       "name":"Héctor Cotelo",
       "id": 6,
-      "image":"@/assets/images/team/paola.jpeg",
-      "summary":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt eos eum adipisci. Iusto in quod repellendus placeat laborum aliquid sequi voluptas natus nihil doloribus? Fugit quaerat sed accusantium quisquam!",
       "social": [
-                  {"url": "https://www.facebook.com/hcotelo", "icon":"fab fa-facebook"},
-                  {"url": "", "icon":"fab fa-twitter"},
-                  {"url":"", "icon":"fab fa-linkedin-in"},
-                  {"url":"", "icon":"fab fa-github"},
-                  {"url":"", "icon":"fab fa-youtube"},
-                  {"url":"", "icon":"fab fa-instagram"},
-                  {"url":"", "icon":"fas fa-globe"}
+        {"url": "https://www.facebook.com/hcotelo", "icon":"fab fa-facebook"}
       ]
     },
     {
       "name":"Facundo Petre",
       "id": 7,
-      "image":"@/assets/images/team/facundo.jpg",
-      "summary":"Chico apasionado por la tecnología, desarrollador de software en constante crecimiento. Siempre dispuesto a tomar nuevos retos y desafíos, creciendo en base al conocimiento que estos otorgan.",
       "social": [
-                  {"url": "https://www.fb.com/facundo.petre/", "icon":"fab fa-facebook"},
-                  {"url": "https://twitter.com/facup3", "icon":"fab fa-twitter"},
-                  {"url":"https://www.linkedin.com/in/facundopetre/", "icon":"fab fa-linkedin-in"},
-                  {"url":"https://github.com/facundop3", "icon":"fab fa-github"},
-                  {"url":"", "icon":"fab fa-youtube"},
-                  {"url":"", "icon":"fab fa-instagram"},
-                  {"url":"", "icon":"fas fa-globe"}
+        {"url": "https://twitter.com/facup3", "icon":"fab fa-twitter"}
       ]
     }
   ]

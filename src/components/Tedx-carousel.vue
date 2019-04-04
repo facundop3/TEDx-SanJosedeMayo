@@ -45,10 +45,6 @@
             src: require('@/assets/images/carousel/tedx-winers.jpg')
           },
           
-          // {
-          //   src: require('@/assets/images/carousel/tedx-bunker.jpg')
-          // }
-          
         ]
       }
     }
