@@ -65,4 +65,3 @@ export default {
   height: 55px;
 }
 </style>
-

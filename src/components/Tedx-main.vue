@@ -7,13 +7,13 @@
         <h1>Auspician: </h1>
       </v-layout>
       <v-container grid-list-md text-xs-center>
-        <tedx-sponsor></tedx-sponsor>
+        <tedx-sponsor :images="images.sponsors"/>
     </v-container>
     <v-layout row wrap class="title-layout" ref="SPONSORS">
       <h1>Colaboran: </h1>
     </v-layout>
           <v-container grid-list-md text-xs-center>
-        <tedx-sponsor></tedx-sponsor>
+        <tedx-sponsor :images="images.helpers"/>
     </v-container>
     <v-layout row wrap class="title-layout" ref="EQUIPO">
       <h1>Nuestros Equipo </h1>
@@ -39,6 +39,7 @@ import TedxCarousel from '@/components/Tedx-carousel.vue'
 import eventData2018 from '@/assets/event-data-2018.json'
 import TedxSponsor from '@/components/sponsor/Tedx-sponsor.vue'
 import TedxTeamMember from '@/components/team/Tedx-team-member.vue'
+import images from '@/components/sponsor/sponsorsImages.js'
 
 export default {
   components: {
@@ -52,7 +53,8 @@ export default {
   data(){
     return {
       speakers: eventData2018.speakers,
-      teamMembers: eventData2018.teamMembers
+      teamMembers: eventData2018.teamMembers,
+      images,
     }
   },
   methods:{

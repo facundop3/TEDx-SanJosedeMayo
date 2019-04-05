@@ -46,9 +46,7 @@ export default {
       socials: this.$props.speaker.social,
       } 
   },
-    props: ['speaker'],
-    mounted(){
-    }
+    props: ['speaker']
 }
 </script>
 <style scoped>
