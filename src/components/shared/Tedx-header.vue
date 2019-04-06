@@ -6,7 +6,7 @@
         <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Oradores </v-btn>
         <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Sponsors</v-btn>
         <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Equipo</v-btn>
-        <v-btn  v-show="!xsMenu" flat class="red--text" @click="goTo2018">2018</v-btn>
+        <v-btn  v-show="!xsMenu" flat class="red--text" @click="toggleYear">{{year}}</v-btn>
        <v-menu bottom left v-show="xsMenu">
             <v-btn
               slot="activator"
@@ -39,15 +39,20 @@ export default {
         { title: '2018' }
       ],
       logo: logo,
-      xsMenu: this.$vuetify.breakpoint.xs
+      xsMenu: this.$vuetify.breakpoint.xs,
+      year: this.$attrs.year ? this.$attrs.year : '2018'
     }
   },
   methods:{
     backHome(){
       this.$router.push('/')
     },
-    goTo2018(){
-      this.$router.push('/2018')
+    toggleYear(){
+      if(this.$attrs.year){
+        this.$router.push('/')
+      } else{
+        this.$router.push('/2018')
+      }
     },
     moveTo(ev){
       let buttonRef = ev.target.innerText.toUpperCase()

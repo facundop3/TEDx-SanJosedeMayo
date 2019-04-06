@@ -4,6 +4,9 @@
     <tedx-carousel/>
     <v-container fluid>
       <v-layout row wrap class="title-layout" ref="SPONSORS">
+        <iframe width="1206" height="663" src="https://www.youtube.com/embed/slJFi86Rr4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
+      </v-layout>
+      <v-layout row wrap class="title-layout" ref="SPONSORS">
         <h1>Auspician: </h1>
       </v-layout>
       <v-container grid-list-md text-xs-center>

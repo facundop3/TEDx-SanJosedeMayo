@@ -6,7 +6,7 @@ const sponsors = [
                     {
                       src: require('@/assets/images/sponsors/san-jose.png'),
                       url:'http://www.sanjose.gub.uy/',
-                      id:8
+                      id:1
                     },
                     {
                       src:'',
@@ -15,26 +15,26 @@ const sponsors = [
                     {
                       src: require('@/assets/images/sponsors/optica-florida.png'),
                       url:'http://www.opticaflorida.com.uy/v3/index.php',
-                      id:6
+                      id:2
                     },
                     {
                       src: require('@/assets/images/sponsors/utec.png'),
                       url: 'https://utec.edu.uy/',
-                      id:9
+                      id:3
                     },
                     {
                       src: require('@/assets/images/sponsors/marcre.png'),
                       url:'http://www.marcre.com.uy/',
-                      id:5
+                      id:4
                     },
                     {
                       src:'',
-                      id:'fill-1'
+                      id:'fill-3'
                     },
                     {
                       src: require('@/assets/images/sponsors/amsj.png'),
                       url:'http://www.amsj.com.uy/',
-                      id:1
+                      id:5
                     }
 ]
 
@@ -42,21 +42,21 @@ const helpers = [
   {
     src: require('@/assets/images/sponsors/cedrani.png'),
     url:'',
-    id:8
+    id:6
   },
   {
     src: require('@/assets/images/sponsors/choco-artesanal.jpg'),
     url:'',
-    id:6
+    id:7
   },
   {
     src: require('@/assets/images/sponsors/Luks 1500.jpeg'),
     url: '',
-    id:9
+    id:8
   },
   {
     src:'',
-    id:'fill-1'
+    id:'fill-4'
   },
 ]
 

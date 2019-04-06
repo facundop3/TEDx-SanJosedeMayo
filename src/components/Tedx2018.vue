@@ -1,6 +1,6 @@
 <template>
   <div>
-    <tedx-header  @moveTo="moveToMain"/>
+    <tedx-header  @moveTo="moveToMain" year="2019"/>
     <v-container fluid>
     <v-container>
        <v-layout row wrap class="title-layout" ref="ORADORES">
