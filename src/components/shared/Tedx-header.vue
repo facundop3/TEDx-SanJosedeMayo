@@ -3,9 +3,11 @@
     <v-toolbar-title><img class="logo" :src="logo" @click="backHome"/></v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="red--text">
-        <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Oradores </v-btn>
-        <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Sponsors</v-btn>
-        <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Equipo</v-btn>
+        <template v-if="showNavOptions">
+          <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Oradores </v-btn>
+          <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Sponsors</v-btn>
+          <v-btn  v-show="!xsMenu" flat class="red--text" @click="moveTo">Equipo</v-btn>
+        </template>
         <v-btn  v-show="!xsMenu" flat class="red--text" @click="toggleYear">{{year}}</v-btn>
        <v-menu bottom left v-show="xsMenu">
             <v-btn
@@ -40,7 +42,8 @@ export default {
       ],
       logo: logo,
       xsMenu: this.$vuetify.breakpoint.xs,
-      year: this.$attrs.year ? this.$attrs.year : '2018'
+      year: this.$attrs.year ? this.$attrs.year : '2018',
+      showNavOptions: !this.$attrs.year
     }
   },
   methods:{
