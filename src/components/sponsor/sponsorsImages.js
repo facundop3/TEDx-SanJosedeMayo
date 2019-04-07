@@ -41,17 +41,17 @@ const sponsors = [
 const helpers = [
   {
     src: require('@/assets/images/sponsors/cedrani.png'),
-    url:'',
+    url:'http://inmobiliariacedrani.com.uy/',
     id:6
   },
   {
     src: require('@/assets/images/sponsors/choco-artesanal.jpg'),
-    url:'',
+    url:'https://www.facebook.com/ChocoArtesanalsj/',
     id:7
   },
   {
     src: require('@/assets/images/sponsors/Luks 1500.jpeg'),
-    url: '',
+    url: 'https://www.facebook.com/salonlukssanjose/',
     id:8
   },
   {
