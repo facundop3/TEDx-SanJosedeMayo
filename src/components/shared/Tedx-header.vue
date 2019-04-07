@@ -17,12 +17,17 @@
               <v-icon class="redIcon">fa-ellipsis-v</v-icon>
             </v-btn>
             <v-list>
+              <template v-if="this.showNavOptions">
               <v-list-tile
                 v-for="(item, i) in items"
                 :key="i"
                 @click="moveTo"
                 >
                 <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+              </v-list-tile>
+              </template>
+              <v-list-tile @click="toggleYear">
+                <v-list-tile-title>{{ year }}</v-list-tile-title>
               </v-list-tile>
             </v-list>
           </v-menu>
@@ -37,8 +42,7 @@ export default {
       items: [
         { title: 'Oradores' },
         { title: 'Sponsors' },
-        { title: 'Equipo' },
-        { title: '2018' }
+        { title: 'Equipo' }
       ],
       logo: logo,
       xsMenu: this.$vuetify.breakpoint.xs,
