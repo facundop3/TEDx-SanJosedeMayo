@@ -26,7 +26,7 @@
         <tedx-sponsor size="200" :images="images.invites"/>
     </v-container>
     <v-layout row wrap class="title-layout" ref="EQUIPO">
-      <h1>Nuestro Equipo </h1>
+      <h1>Nuestro Equipo: </h1>
     </v-layout>
     <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
