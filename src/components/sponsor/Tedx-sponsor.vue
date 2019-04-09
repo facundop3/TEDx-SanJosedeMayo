@@ -8,7 +8,7 @@
             v-if="image.src"
             :tile="true"
             :size="size"
-            color="grey lighten-4">
+            color="lighten-4">
             <img :src="image.src" alt="avatar" style="height: auto;">
           </v-avatar>
         </a>
