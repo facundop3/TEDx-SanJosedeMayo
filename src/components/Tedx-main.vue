@@ -10,16 +10,23 @@
         <h1>Auspician: </h1>
       </v-layout>
       <v-container grid-list-md text-xs-center>
-        <tedx-sponsor :images="images.sponsors"/>
+        <tedx-sponsor size="200" :images="images.sponsors"/>
     </v-container>
     <v-layout row wrap class="title-layout" ref="SPONSORS">
       <h1>Colaboran: </h1>
     </v-layout>
           <v-container grid-list-md text-xs-center>
-        <tedx-sponsor :images="images.helpers"/>
+        <tedx-sponsor size="200" :images="images.helpers"/>
+    </v-container>
+    </v-container>
+    <v-layout row wrap class="title-layout" ref="SPONSORS">
+      <h1>Invita: </h1>
+    </v-layout>
+          <v-container grid-list-md text-xs-center>
+        <tedx-sponsor size="200" :images="images.invites"/>
     </v-container>
     <v-layout row wrap class="title-layout" ref="EQUIPO">
-      <h1>Nuestros Equipo </h1>
+      <h1>Nuestro Equipo </h1>
     </v-layout>
     <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
@@ -30,7 +37,6 @@
     </v-container>
       <v-slide-y-transition mode="out-in">
       </v-slide-y-transition>
-    </v-container>
     <tedx-footer></tedx-footer>
   </div>
 </template>

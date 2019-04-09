@@ -60,7 +60,24 @@ const helpers = [
   },
 ]
 
+const invites = [
+  {
+    src:'',
+    id:'fill-5'
+  },
+  {
+    src: require('@/assets/images/sponsors/sanJoseAhora.png'),
+    url: 'https://sanjoseahora.com.uy/',
+    id:9
+  },
+  {
+    src:'',
+    id:'fill-6'
+  },
+]
+
 export default {
   sponsors,
-  helpers
+  helpers,
+  invites
 }
