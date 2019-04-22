@@ -26,7 +26,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text black">
-       <strong><a href="https://www.linkedin.com/in/facundopetre/" class="blue--text">〈code〉with ❤️ by @facup3</a></strong>
+       <strong><a href="https://www.linkedin.com/in/facundopetre/" class="blue--text">〈here is the code 🤖〉</a></strong>
       </v-card-text>
     </v-card>
   </v-footer>

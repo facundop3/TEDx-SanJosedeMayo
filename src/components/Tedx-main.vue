@@ -3,6 +3,48 @@
     <tedx-header  @moveTo="moveToMain"/>
     <tedx-carousel/>
     <v-container fluid>
+      <v-container grid-list-md text-xs-center class="spaceArround">
+        <template v-for="speakerImage in speakersImages_1">
+          <v-avatar
+              :key="speakerImage"
+              :tile="false"
+              size="350"
+              color="grey lighten-4"
+            >
+            <img :src="require(`@/assets/images/speakers/2019/${speakerImage}`)">
+          </v-avatar>
+        </template>
+    </v-container>
+      <v-container grid-list-md text-xs-center class="spaceArround">
+        <template v-for="speakerImage in speakersImages_2">
+          <v-avatar
+              :key="speakerImage"
+              :tile="false"
+              size="350"
+              color="grey lighten-4"
+            >
+            <img :src="require(`@/assets/images/speakers/2019/${speakerImage}`)">
+          </v-avatar>
+        </template>
+    </v-container>
+      <v-container grid-list-md text-xs-center class="center">
+          <v-avatar
+              :tile="false"
+              size="350"
+              color="grey lighten-4"
+            >
+            <img :src="require(`@/assets/images/speakers/2019/sebastian.jpg`)">
+          </v-avatar>
+    </v-container>
+      <v-layout row wrap class="title-layout">
+        <h1>Obtenga su entrada: </h1>
+      </v-layout>
+      <v-container grid-list-md text-xs-center>
+        <get-ticket />
+    </v-container>
+      <v-layout row wrap class="title-layout" ref="SPONSORS">
+        <h1>Reviví edición 2018: </h1>
+      </v-layout>
       <v-layout row wrap class="title-layout" ref="SPONSORS">
         <iframe width="1206" height="663" src="https://www.youtube.com/embed/slJFi86Rr4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
       </v-layout>
@@ -49,6 +91,7 @@ import eventData2018 from '@/assets/event-data-2018.json'
 import TedxSponsor from '@/components/sponsor/Tedx-sponsor.vue'
 import TedxTeamMember from '@/components/team/Tedx-team-member.vue'
 import images from '@/components/sponsor/sponsorsImages.js'
+import GetTicket from '@/components/GetTicket/GetTicket.vue'
 
 export default {
   components: {
@@ -56,7 +99,8 @@ export default {
     TedxFooter,
     TedxCarousel,
     TedxSponsor,
-    TedxTeamMember
+    TedxTeamMember,
+    GetTicket
 
   },
   data(){
@@ -64,6 +108,16 @@ export default {
       speakers: eventData2018.speakers,
       teamMembers: eventData2018.teamMembers,
       images,
+      speakersImages_1: [
+        "agueda.jpg",
+        "indira-mauro.jpg",
+        "mercedes.jpg"
+      ],
+      speakersImages_2: [
+        "pilar.jpg",
+        "manuel.jpg",
+        "rafael.jpg"
+      ]
     }
   },
   methods:{
@@ -97,7 +151,14 @@ li {
 a {
   color: #42b983;
 }
-
+.spaceArround{
+  display: flex;
+  justify-content: space-between;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
 </style>
 <style>
 
