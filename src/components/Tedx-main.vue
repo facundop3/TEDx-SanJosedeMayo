@@ -2,10 +2,11 @@
   <div>
     <tedx-header  @moveTo="moveToMain"/>
     <tedx-carousel/>
-    <v-container fluid>
-      <v-container grid-list-md text-xs-center class="spaceArround">
+    <v-container fluid style="padding:0;">
+      <v-container grid-list-sm text-xs-center style="display:block;padding:0;">
         <template v-for="speakerImage in speakersImages_1">
           <v-avatar
+              style="margin:.5em;"
               :key="speakerImage"
               :tile="false"
               size="350"
@@ -15,19 +16,20 @@
           </v-avatar>
         </template>
     </v-container>
-      <v-container grid-list-md text-xs-center class="spaceArround">
+      <v-container grid-list-sm text-xs-center style="display:block; padding:0;">
         <template v-for="speakerImage in speakersImages_2">
           <v-avatar
+              style="margin:.5em;"
               :key="speakerImage"
               :tile="false"
-              size="350"
+              size="320"
               color="grey lighten-4"
             >
             <img :src="require(`@/assets/images/speakers/2019/${speakerImage}`)">
           </v-avatar>
         </template>
     </v-container>
-      <v-container grid-list-md text-xs-center class="center">
+      <v-container grid-list-sm text-xs-center class="center">
           <v-avatar
               :tile="false"
               size="350"
@@ -57,7 +59,7 @@
     <v-layout row wrap class="title-layout" ref="SPONSORS">
       <h1>Colaboran: </h1>
     </v-layout>
-          <v-container grid-list-md text-xs-center>
+    <v-container grid-list-md text-xs-center>
         <tedx-sponsor size="200" :images="images.helpers"/>
     </v-container>
     </v-container>

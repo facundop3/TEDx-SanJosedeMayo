@@ -58,6 +58,11 @@ const helpers = [
     src:'',
     id:'fill-4'
   },
+  {
+    src:require('@/assets/images/sponsors/lapasiva.png'),
+    url: 'https://www.facebook.com/salonlukssanjose/',
+    id:10
+  },
 ]
 
 const invites = [
